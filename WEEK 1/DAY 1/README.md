@@ -17,7 +17,7 @@ In this task, I created a Node.js script to understand basic system-level inform
 ### Screenshots
 
 #### Bashrc Aliases
-![Bashrc Aliases](images/bashrc alias screenshot.png)
+![Bashrc Aliases](Images/bashrc alias screenshot.png)
 
 #### System Metrics Log
-![System Metrics Log](images/Screenshot logs.png)
+![System Metrics Log](Images/Screenshot logs.png)
