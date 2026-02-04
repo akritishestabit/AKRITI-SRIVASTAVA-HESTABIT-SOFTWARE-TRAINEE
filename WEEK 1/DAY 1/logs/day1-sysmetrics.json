@@ -1,0 +1,32 @@
+{
+  "hostname": "hestabit-Dell-Pro-14-Essential-PV14250",
+  "availableDiskGB": "427.22",
+  "openPorts": [
+    ""
+  ],
+  "defaultGateway": "10.224.63.184",
+  "loggedInUsers": 2,
+  "cpuUsage": {
+    "user": 51077,
+    "system": 24036
+  },
+  "resourceUsage": {
+    "userCPUTime": 51104,
+    "systemCPUTime": 24048,
+    "maxRSS": 46040,
+    "sharedMemorySize": 0,
+    "unsharedDataSize": 0,
+    "unsharedStackSize": 0,
+    "minorPageFault": 3465,
+    "majorPageFault": 0,
+    "swappedOut": 0,
+    "fsRead": 0,
+    "fsWrite": 0,
+    "ipcSent": 0,
+    "ipcReceived": 0,
+    "signalsCount": 0,
+    "voluntaryContextSwitches": 35,
+    "involuntaryContextSwitches": 3
+  },
+  "timestamp": "2026-02-03T18:19:09.724Z"
+}
