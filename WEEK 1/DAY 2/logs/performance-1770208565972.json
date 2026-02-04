@@ -1,0 +1,26 @@
+[
+  {
+    "file": "file1.txt",
+    "lines": 6,
+    "words": 48,
+    "chars": 270,
+    "executionTimeMs": 3,
+    "memoryMB": "0.03"
+  },
+  {
+    "file": "file2.txt",
+    "lines": 4,
+    "words": 32,
+    "chars": 219,
+    "executionTimeMs": 3,
+    "memoryMB": "0.04"
+  },
+  {
+    "file": "file3.txt",
+    "lines": 9,
+    "words": 23,
+    "chars": 179,
+    "executionTimeMs": 3,
+    "memoryMB": "0.03"
+  }
+]

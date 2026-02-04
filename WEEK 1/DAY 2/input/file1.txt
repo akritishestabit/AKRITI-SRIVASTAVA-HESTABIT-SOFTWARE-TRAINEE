@@ -1,0 +1,6 @@
+Hello, my name is Akriti Srivastava
+I am working as a Software Trainee at Hestabit
+This file is created for testing a Node.js CLI tool
+Hello, my name is Akriti Srivastava
+This file is created for testing a Node.js CLI tool
+Node.js helps in building fast backend systems

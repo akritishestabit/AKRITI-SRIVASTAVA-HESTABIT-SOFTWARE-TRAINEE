@@ -1,0 +1,8 @@
+System Metrics Report
+system metrics report
+
+Developer Name: Akriti Srivastava
+Organization: Hestabit Technologies
+CPU Usage: 45%
+Memory Usage: 512MB
+Disk Space Available: 120GB

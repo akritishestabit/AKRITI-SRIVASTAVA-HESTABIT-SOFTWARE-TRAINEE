@@ -1,0 +1,4 @@
+At Hestabit, we work on real-world software projects.
+Node.js   is event-driven, fast, and scalable.
+CLI tools are useful for automation, debugging, and analysis.
+This file is written by Akriti Srivastava for practice.
