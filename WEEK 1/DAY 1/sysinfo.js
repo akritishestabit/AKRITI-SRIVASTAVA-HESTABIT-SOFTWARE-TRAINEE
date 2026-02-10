@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-// ---- Helper functions (safe) ----
 function getAvailableDiskSpaceGB() {
   try {
     const output = execSync("df -k /").toString().split("\n")[1].split(/\s+/);
@@ -43,7 +42,6 @@ function getLoggedInUsersCount() {
   }
 }
 
-// ---- System info object ----
 const sysInfo = {
   hostname: os.hostname(),
   availableDiskGB: getAvailableDiskSpaceGB(),
@@ -57,13 +55,13 @@ const sysInfo = {
   timestamp: new Date().toISOString()
 };
 
-// ---- Logs folder ----
+
 const logDir = path.join(__dirname, "logs");
 if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
-// ---- Write log file ----
+
 fs.writeFileSync(
   path.join(logDir, "day1-sysmetrics.json"),
   JSON.stringify(sysInfo, null, 2)
