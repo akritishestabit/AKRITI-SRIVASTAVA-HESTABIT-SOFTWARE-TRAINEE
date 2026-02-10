@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
+
 function getAvailableDiskSpaceGB() {
   try {
     const output = execSync("df -k /").toString().split("\n")[1].split(/\s+/);
@@ -54,7 +55,6 @@ const sysInfo = {
 
   timestamp: new Date().toISOString()
 };
-
 
 const logDir = path.join(__dirname, "logs");
 if (!fs.existsSync(logDir)) {
