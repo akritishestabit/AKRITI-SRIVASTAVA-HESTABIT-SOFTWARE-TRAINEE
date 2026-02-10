@@ -1,0 +1,27 @@
+GitHub API Header Analysis
+
+URL:
+https://api.github.com/users/octocat
+
+Status Code:
+HTTP/2 200 OK
+
+Server:
+server: github.com
+
+Rate Limiting:
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 53
+x-ratelimit-used: 7
+x-ratelimit-resource: core
+
+ETag:
+etag: W/"88923aadca680bf9259872d2bffd2f02867b4d0f1f3a7f91377933c6c063977c"
+
+Caching:
+cache-control: public, max-age=60, s-maxage=60
+
+Security Headers:
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
