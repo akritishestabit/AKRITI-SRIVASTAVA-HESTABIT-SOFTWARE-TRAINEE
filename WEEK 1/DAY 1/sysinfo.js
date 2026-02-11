@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-
 function getAvailableDiskSpaceGB() {
   try {
     const output = execSync("df -k /").toString().split("\n")[1].split(/\s+/);
@@ -17,7 +16,7 @@ function getAvailableDiskSpaceGB() {
 function getOpenPorts() {
   try {
     const output = execSync(
-      "lsof -i -P -n | grep LISTEN | head -n 5"
+      "lsof -i -P -n | grep LISTEN | head -n 5",
     ).toString();
     return output.trim().split("\n");
   } catch {
@@ -53,7 +52,7 @@ const sysInfo = {
   cpuUsage: process.cpuUsage(),
   resourceUsage: process.resourceUsage(),
 
-  timestamp: new Date().toISOString()
+  timestamp: new Date().toISOString(),
 };
 
 const logDir = path.join(__dirname, "logs");
@@ -61,10 +60,9 @@ if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
-
 fs.writeFileSync(
   path.join(logDir, "day1-sysmetrics.json"),
-  JSON.stringify(sysInfo, null, 2)
+  JSON.stringify(sysInfo, null, 2),
 );
 
 console.log("Day 1 system metrics captured successfully");
