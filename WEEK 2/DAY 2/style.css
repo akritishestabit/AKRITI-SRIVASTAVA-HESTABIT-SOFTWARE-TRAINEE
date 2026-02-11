@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    background: #2c2c2c;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 220px 1fr 1fr;
+
+    /* KEY FIX: controlled row heights */
+    grid-template-rows:
+        70px     /* header */
+        180px    /* content-1 */
+        160px    /* content-2 + content-3 */
+        70px;    /* footer */
+
+    gap: 15px;
+}
+
+/* HEADER */
+.header {
+    grid-column: 1 / -1;
+    background: #7b68ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-row: 2 / 4;
+    background: #2dd4bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    font-weight: bold;
+}
+
+/* CONTENT COMMON */
+.content {
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* CONTENT-1 */
+.content-1 {
+    grid-column: 2 / 4;
+}
+
+/* CONTENT-2 & 3 stay default grid cells */
+
+/* FOOTER */
+.footer {
+    grid-column: 1 / -1;
+    background: #7b68ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
