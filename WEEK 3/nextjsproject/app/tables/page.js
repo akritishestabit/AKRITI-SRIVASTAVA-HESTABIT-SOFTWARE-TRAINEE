@@ -1,4 +1,3 @@
-//app/tables/page.js
 import AuthorsTable from "../../components/tables/authors/AuthorsTable";
 import ProjectsCard from "../../components/dashboard/section4/ProjectsCard"; 
 

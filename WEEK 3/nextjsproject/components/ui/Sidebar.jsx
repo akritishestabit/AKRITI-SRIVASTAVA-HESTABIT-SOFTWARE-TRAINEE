@@ -34,7 +34,7 @@ export default function Sidebar() {
         <SidebarItem
           icon={FiHome}
           label="Dashboard"
-          href="/"
+          href="/dashboard"
           active={pathname === "/dashboard"}
         />
 
@@ -73,14 +73,14 @@ export default function Sidebar() {
         <SidebarItem
           icon={FiLogIn}
           label="Sign In"
-          href="/signin"
+          href="/auth/signin"
           active={pathname === "/signin"}
         />
 
         <SidebarItem
           icon={FiUserPlus}
           label="Sign Up"
-          href="/signup"
+          href="/auth/signup"
           active={pathname === "/signup"}
         />
       </nav>

@@ -1,46 +1,18 @@
-import StatsGrid from "../components/dashboard/stats/StatsGrid";
-import BuiltByDevelopers from "../components/dashboard/promo/BuiltByDevelopers";
-import WorkWithRockets from "../components/dashboard/promo/WorkWithRockets";
-import ActiveUsersCard from "../components/dashboard/section3/ActiveUsersCard";
-import SalesOverviewCard from "../components/dashboard/section3/SalesOverviewCard";
-import ProjectsCard from "../components/dashboard/section4/ProjectsCard";
-import OrdersOverview from "../components/dashboard/section5/OrdersOverview";
+// // app/page.js
+// import { redirect } from "next/navigation";
 
-export default function DashboardPage() {
+// export default function HomePage() {
+//   redirect("/dashboard");
+// }
+export default function Home() {
   return (
-    <div className="space-y-6">
-      <StatsGrid />
-
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-        <div className="xl:col-span-2">
-          <BuiltByDevelopers />
-        </div>
-        <div className="xl:col-span-1">
-          <WorkWithRockets />
-        </div>
-      </div>
-
-      
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-        <div className="xl:col-span-1">
-          <ActiveUsersCard />
-        </div>
-        <div className="xl:col-span-2">
-          <SalesOverviewCard />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-        
-        
-        <div className="xl:col-span-2">
-          <ProjectsCard />
-        </div>
-
-        <div className="bg-white rounded-xl shadow-sm" >
-          <OrdersOverview />
-        </div>
-      </div>
+    <div className="h-screen flex items-center justify-center">
+      <a
+        href="/dashboard"
+        className="px-6 py-3 bg-teal-500 text-white rounded-lg"
+      >
+        Go to Dashboard
+      </a>
     </div>
   );
 }
