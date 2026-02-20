@@ -1,4 +1,4 @@
-// components/tables/authors/AuthorsTable.jsx
+
 "use client";
 
 import AuthorRow from "./AuthorRow";
@@ -8,14 +8,14 @@ export default function AuthorsTable() {
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden">
       
-      {/* HEADER */}
+      
       <div className="px-6 py-5">
         <h2 className="text-lg font-semibold text-gray-900">
           Authors Table
         </h2>
       </div>
 
-      {/* TABLE */}
+      
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>

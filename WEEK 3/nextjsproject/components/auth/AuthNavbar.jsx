@@ -14,7 +14,7 @@ export default function AuthNavbar() {
   return (
     <header className="w-full flex justify-center mt-6 relative z-30">
       
-      {/* MAIN CONTAINER */}
+      
       <div
         className={`w-[92%] max-w-6xl px-8 py-3 flex items-center justify-between rounded-2xl transition
         ${
@@ -24,7 +24,7 @@ export default function AuthNavbar() {
         }`}
       >
         
-        {/* LEFT - LOGO */}
+        
         <div className="flex items-center gap-2">
           <Image
             src="/logo.svg"
@@ -41,7 +41,7 @@ export default function AuthNavbar() {
           </span>
         </div>
 
-        {/* NAV LINKS */}
+        
         <nav
           className={`flex items-center gap-8 text-sm font-medium transition ${
             isSignup ? "text-white" : "text-gray-600"
@@ -86,7 +86,7 @@ export default function AuthNavbar() {
           </Link>
         </nav>
 
-        {/* FREE DOWNLOAD BUTTON */}
+        
         <button
           className={`px-6 py-2 rounded-full text-sm font-medium transition
           ${

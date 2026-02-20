@@ -2,15 +2,13 @@
 
 export default function AuthRightPanel() {
   return (
-    // <div className="h-full w-full relative overflow-hidden flex items-center justify-center
-    //                 rounded-tl-[40px] rounded-bl-[40px]
-    //                 bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600">
+    
       <div className="h-220 w-240 relative overflow-hidden flex items-center justify-center
                 rounded-l-[40px]
                 bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600">
 
 
-      {/* SOFT WAVE OVERLAY */}
+      
       <div className="absolute inset-0 opacity-25">
         <svg
           className="w-full h-full"
@@ -39,7 +37,7 @@ export default function AuthRightPanel() {
         </svg>
       </div>
 
-      {/* CENTER CONTENT */}
+      
       <div className="relative z-10 flex items-center gap-6">
         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
           <svg

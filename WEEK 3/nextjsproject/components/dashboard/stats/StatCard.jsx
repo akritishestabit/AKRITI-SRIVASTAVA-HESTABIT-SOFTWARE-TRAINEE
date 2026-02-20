@@ -10,7 +10,7 @@ export default function StatCard({
   return (
     <div className="bg-white rounded-xl px-5 py-4 flex items-center justify-between shadow-sm">
       
-      {/* LEFT CONTENT */}
+      
       <div>
         <p className="text-xs text-gray-400 font-medium">{title}</p>
 
@@ -29,7 +29,7 @@ export default function StatCard({
         </div>
       </div>
 
-      {/* RIGHT ICON */}
+      
       <div className="w-11 h-11 rounded-lg bg-teal-400 flex items-center justify-center text-white">
         {icon}
       </div>

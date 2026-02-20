@@ -16,7 +16,7 @@ import SidebarItem from "./SidebarItem";
 import SidebarHelp from "./SidebarHelp";
 
 export default function Sidebar() {
-  const pathname = usePathname(); // 🔥 CURRENT ROUTE
+  const pathname = usePathname(); 
 
   return (
     <aside className="w-64 min-h-screen bg-white flex flex-col">

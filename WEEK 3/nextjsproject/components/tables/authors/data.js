@@ -1,5 +1,3 @@
-// components/tables/authors/data.js
-
 export const authorsData = [
   {
     id: 1,

@@ -1,4 +1,4 @@
-// components/tables/authors/AuthorRow.jsx
+
 import Image from "next/image";
 
 export default function AuthorRow({ author }) {
@@ -7,7 +7,7 @@ export default function AuthorRow({ author }) {
   return (
     <tr className="border-t border-gray-100">
       
-      {/* AUTHOR */}
+      
       <td className="py-4 px-6">
         <div className="flex items-center gap-3">
           <Image
@@ -28,7 +28,7 @@ export default function AuthorRow({ author }) {
         </div>
       </td>
 
-      {/* FUNCTION */}
+      
       <td className="py-4 px-6">
         <p className="text-sm font-semibold text-gray-900">
           {author.role}
@@ -38,7 +38,7 @@ export default function AuthorRow({ author }) {
         </p>
       </td>
 
-      {/* STATUS */}
+      
       <td className="py-4 px-6">
         <span
           className={`px-3 py-1 text-xs font-semibold rounded-full
@@ -53,12 +53,12 @@ export default function AuthorRow({ author }) {
         </span>
       </td>
 
-      {/* EMPLOYED */}
+      
       <td className="py-4 px-6 text-sm font-semibold text-gray-700">
         {author.employed}
       </td>
 
-      {/* ACTION */}
+      
       <td className="py-4 px-6 text-sm text-gray-500 cursor-pointer hover:text-teal-500">
         Edit
       </td>

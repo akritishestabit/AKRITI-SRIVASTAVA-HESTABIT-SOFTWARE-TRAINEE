@@ -9,14 +9,14 @@ export default function SignInForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Future: API call
+    
     console.log("Form submitted");
   };
 
   return (
     <div className="w-full max-w-md">
       
-      {/* HEADING */}
+      
       <h2 className="text-2xl font-bold text-teal-500">
         Welcome Back
       </h2>
@@ -25,10 +25,10 @@ export default function SignInForm() {
         Enter your email and password to sign in
       </p>
 
-      {/* FORM */}
+      
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         
-        {/* EMAIL */}
+        
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Email
@@ -41,7 +41,7 @@ export default function SignInForm() {
           />
         </div>
 
-        {/* PASSWORD */}
+       
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Password
@@ -54,7 +54,7 @@ export default function SignInForm() {
           />
         </div>
 
-        {/* REMEMBER ME */}
+        
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -75,7 +75,7 @@ export default function SignInForm() {
           </span>
         </div>
 
-        {/* SIGN IN BUTTON */}
+        
         <button
           type="submit"
           className="w-full bg-teal-400 hover:bg-teal-500 text-white font-semibold py-3 rounded-xl transition"
@@ -84,7 +84,7 @@ export default function SignInForm() {
         </button>
       </form>
 
-      {/* SIGN UP LINK */}
+     
       <p className="mt-6 text-sm text-gray-400">
         Don&apos;t have an account?{" "}
         <Link
