@@ -1,23 +1,24 @@
 {
   "hostname": "hestabit-Dell-Pro-14-Essential-PV14250",
-  "availableDiskGB": "427.22",
+  "availableDiskGB": "424.49",
   "openPorts": [
-    ""
+    "code       24587 akritisrivastava   70u  IPv4 662505      0t0  TCP *:5500 (LISTEN)",
+    "postman   173570 akritisrivastava  112u  IPv6 802211      0t0  TCP *:15611 (LISTEN)"
   ],
-  "defaultGateway": "10.224.63.184",
+  "defaultGateway": "10.10.0.1",
   "loggedInUsers": 2,
   "cpuUsage": {
-    "user": 51077,
-    "system": 24036
+    "user": 26963,
+    "system": 12518
   },
   "resourceUsage": {
-    "userCPUTime": 51104,
-    "systemCPUTime": 24048,
-    "maxRSS": 46040,
+    "userCPUTime": 26984,
+    "systemCPUTime": 12528,
+    "maxRSS": 45732,
     "sharedMemorySize": 0,
     "unsharedDataSize": 0,
     "unsharedStackSize": 0,
-    "minorPageFault": 3465,
+    "minorPageFault": 3525,
     "majorPageFault": 0,
     "swappedOut": 0,
     "fsRead": 0,
@@ -25,8 +26,8 @@
     "ipcSent": 0,
     "ipcReceived": 0,
     "signalsCount": 0,
-    "voluntaryContextSwitches": 35,
-    "involuntaryContextSwitches": 3
+    "voluntaryContextSwitches": 43,
+    "involuntaryContextSwitches": 2
   },
-  "timestamp": "2026-02-03T18:19:09.724Z"
+  "timestamp": "2026-02-11T07:45:59.918Z"
 }
