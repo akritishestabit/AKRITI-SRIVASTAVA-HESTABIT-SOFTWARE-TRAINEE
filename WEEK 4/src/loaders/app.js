@@ -1,35 +1,35 @@
 const express = require("express");
-const cors = require("cors");
 const helmet = require("helmet");
+const cors = require("cors");
 const logger = require("../utils/logger");
 
-const app = express();
-
 const loadApp = () => {
- 
+  const app = express();
+
+  // Security middlewares
   app.use(helmet());
   app.use(cors());
 
-  
+  // Body parser
   app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
 
   logger.info("Middlewares loaded");
 
-  // Health route
+  // Health check route
   app.get("/health", (req, res) => {
-    res.json({ status: "OK", timestamp: new Date() });
+    res.json({ status: "OK" });
   });
 
-  //just for testing
-  app.get("/test-db", async (req, res) => {
-  const mongoose = require("mongoose");
-  const Test = mongoose.model("Test", new mongoose.Schema({ name: String }));
-  await Test.create({ name: "Akriti" });
-  res.send("Inserted");
-});
+  // Safe route counting (defensive coding)
+  let routeCount = 0;
 
-  logger.info("Routes mounted");
+  if (app._router && app._router.stack) {
+    routeCount = app._router.stack.filter(
+      (layer) => layer.route
+    ).length;
+  }
+
+  logger.info(`Routes mounted: ${routeCount} endpoints`);
 
   return app;
 };

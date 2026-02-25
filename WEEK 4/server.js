@@ -15,9 +15,8 @@ const startServer = async () => {
       logger.info(`Server started on port ${config.port}`);
     });
 
-    
     process.on("SIGINT", () => {
-      logger.info("Shutting down server...");
+      logger.info("Shutting down...");
       server.close(() => {
         logger.info("Server closed");
         process.exit(0);
@@ -25,7 +24,7 @@ const startServer = async () => {
     });
 
   } catch (error) {
-    logger.error("Server startup failed", { error });
+    logger.error("Startup failed");
     process.exit(1);
   }
 };
