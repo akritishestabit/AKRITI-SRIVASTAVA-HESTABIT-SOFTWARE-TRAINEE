@@ -2,6 +2,10 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 const logger = require("../utils/logger");
+const productRoutes = require("../routes/product.routes");
+const errorMiddleware = require("../middlewares/error.middleware");
+
+
 
 const loadApp = () => {
   const app = express();
@@ -14,6 +18,11 @@ const loadApp = () => {
   app.use(express.json());
 
   logger.info("Middlewares loaded");
+
+  app.use("/products", productRoutes);
+
+// error middleware last
+app.use(errorMiddleware);
 
   // Health check route
   app.get("/health", (req, res) => {

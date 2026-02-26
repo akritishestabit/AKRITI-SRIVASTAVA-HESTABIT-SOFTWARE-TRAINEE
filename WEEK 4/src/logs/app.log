@@ -33,3 +33,9 @@
 {"level":"info","message":"Routes mounted: 0 endpoints","timestamp":"2026-02-25T11:23:39.215Z"}
 {"level":"info","message":"Server started on port 5000","timestamp":"2026-02-25T11:23:39.216Z"}
 {"level":"info","message":"Shutting down...","timestamp":"2026-02-25T11:24:39.575Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-02-26T07:04:56.356Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-02-26T07:04:56.377Z"}
+{"level":"info","message":"Middlewares loaded","timestamp":"2026-02-26T07:04:56.378Z"}
+{"level":"info","message":"Routes mounted: 0 endpoints","timestamp":"2026-02-26T07:04:56.379Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-02-26T07:04:56.380Z"}
+{"level":"info","message":"Shutting down...","timestamp":"2026-02-26T09:11:31.809Z"}
