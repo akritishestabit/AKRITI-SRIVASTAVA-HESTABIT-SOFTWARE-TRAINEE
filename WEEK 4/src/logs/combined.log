@@ -1,0 +1,446 @@
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:31:33.268Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:31:33.317Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:31:33.322Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:31:33.322Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:31:33.325Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:33:46.993Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:33:47.142Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:33:47.161Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:33:47.162Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:33:47.175Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:34:12.320Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:34:12.397Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:34:12.410Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:34:12.412Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:34:12.420Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:34:36.706Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:34:36.788Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:34:36.804Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:34:36.805Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:34:36.812Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:35:01.204Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:35:01.263Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:35:01.268Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:35:01.269Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:35:01.274Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:35:04.701Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:35:04.761Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:35:04.769Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:35:04.770Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:35:04.774Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:36:28.040Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:36:28.124Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:36:28.132Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:36:28.133Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:36:28.137Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:36:31.207Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:36:31.269Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:36:31.274Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:36:31.275Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:36:31.279Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:36:32.592Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:36:32.640Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:36:32.654Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:36:32.655Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:36:32.665Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:36:33.905Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:36:33.983Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:36:33.999Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:36:34.000Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:36:34.010Z"}
+{"level":"info","message":"Shutting down...","timestamp":"2026-03-02T08:36:43.735Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:36:47.990Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:36:48.077Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:36:48.090Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:36:48.091Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:36:48.098Z"}
+{"level":"info","message":"GET /products 304 37.520 ms - -","timestamp":"2026-03-02T08:37:14.438Z"}
+{"level":"info","message":"GET /favicon.ico 404 7.430 ms - 150","timestamp":"2026-03-02T08:37:14.524Z"}
+{"level":"info","message":"GET /products 304 10.430 ms - -","timestamp":"2026-03-02T08:38:24.490Z"}
+{"level":"info","message":"GET /favicon.ico 404 1.323 ms - 150","timestamp":"2026-03-02T08:38:24.672Z"}
+{"level":"info","message":"GET /products 304 11.778 ms - -","timestamp":"2026-03-02T08:44:05.691Z"}
+{"level":"info","message":"GET /favicon.ico 404 0.922 ms - 150","timestamp":"2026-03-02T08:44:05.868Z"}
+{"level":"info","message":"GET /products 304 10.466 ms - -","timestamp":"2026-03-02T08:44:07.122Z"}
+{"level":"info","message":"GET /favicon.ico 404 1.631 ms - 150","timestamp":"2026-03-02T08:44:07.259Z"}
+{"level":"info","message":"GET /products 304 8.630 ms - -","timestamp":"2026-03-02T08:45:30.314Z"}
+{"level":"info","message":"GET /favicon.ico 404 1.083 ms - 150","timestamp":"2026-03-02T08:45:30.396Z"}
+{"level":"info","message":"GET /products 304 6.734 ms - -","timestamp":"2026-03-02T08:45:34.210Z"}
+{"level":"info","message":"GET /favicon.ico 404 1.354 ms - 150","timestamp":"2026-03-02T08:45:34.296Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T08:52:43.005Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T08:52:43.056Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T08:52:43.062Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T08:52:43.063Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T08:52:43.066Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T08:52:46.313Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:13:42.644Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:13:42.707Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:13:42.712Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:13:42.713Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:13:42.718Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:13:43.822Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:13:43.884Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:13:43.893Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:13:43.893Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:13:43.901Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T11:13:56.876Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:14:02.753Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:14:02.796Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:14:02.801Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:14:02.801Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:14:02.804Z"}
+{"level":"info","message":"POST /products/send-email 202 6.711 ms - 65","timestamp":"2026-03-02T11:15:28.035Z"}
+{"level":"info","message":"Processing email job: 1","timestamp":"2026-03-02T11:15:28.037Z"}
+{"level":"info","message":"Email sent to test@example.com with subject: Welcome Email","timestamp":"2026-03-02T11:15:30.038Z"}
+{"level":"info","message":"Job 1 completed successfully","timestamp":"2026-03-02T11:15:30.047Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T11:17:41.687Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:21:39.550Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:21:39.604Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:21:39.609Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:21:39.609Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:21:39.613Z"}
+{"level":"info","message":"[0120cc0c-3ebd-4f55-b6f3-0869efb61ce2] GET /products 200 33.624 ms - 620","timestamp":"2026-03-02T11:22:13.034Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:00.544Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:00.614Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:00.622Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:00.623Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:00.628Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:03.127Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:03.188Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:03.194Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:03.195Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:03.199Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:29.773Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:29.890Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:29.902Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:29.903Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:29.911Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:30.804Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:30.926Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:30.939Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:30.940Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:30.943Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:49.622Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:49.720Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:49.739Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:49.741Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:49.753Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:26:50.701Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:26:50.761Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:26:50.767Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:26:50.768Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:26:50.773Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:27:45.632Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:27:45.708Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:27:45.719Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:27:45.720Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:27:45.727Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:27:46.948Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:27:46.994Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:27:47.001Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:27:47.001Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:27:47.005Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:28:40.133Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:28:40.188Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:28:40.193Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:28:40.193Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:28:40.198Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:28:49.711Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:28:49.772Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:28:49.779Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:28:49.780Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:28:49.785Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:29:16.702Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:29:16.799Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:29:16.806Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:29:16.808Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:29:16.811Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T11:29:45.163Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T11:29:49.798Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T11:29:49.883Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T11:29:49.891Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T11:29:49.892Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T11:29:49.896Z"}
+{"level":"info","message":"[6205b43e-8d9d-4790-8904-c2de4108dec3] GET /products 200 29.935 ms - 620","requestId":"6205b43e-8d9d-4790-8904-c2de4108dec3","timestamp":"2026-03-02T11:30:04.383Z"}
+{"level":"info","message":"[58bb50ad-df38-461f-b392-e5c7940b3c60] GET /products 200 6.797 ms - 620","requestId":"58bb50ad-df38-461f-b392-e5c7940b3c60","timestamp":"2026-03-02T11:30:13.566Z"}
+{"level":"info","message":"[9b348fe1-2153-41dc-9b9a-f47f2ccf2c54] GET /products?page=1&limit=5 200 5.786 ms - 620","requestId":"9b348fe1-2153-41dc-9b9a-f47f2ccf2c54","timestamp":"2026-03-02T13:35:54.254Z"}
+{"level":"info","message":"[c0380ee0-86a8-40d0-80e3-ba0a44194997] POST /products 201 25.237 ms - 298","requestId":"c0380ee0-86a8-40d0-80e3-ba0a44194997","timestamp":"2026-03-02T13:54:12.587Z"}
+{"level":"info","message":"[93a5a968-0704-4762-bca8-1bcce035ae3b] POST /products 201 7.622 ms - 298","requestId":"93a5a968-0704-4762-bca8-1bcce035ae3b","timestamp":"2026-03-02T13:57:28.100Z"}
+{"level":"info","message":"[eb4c8f7c-e25f-4ad7-9998-25f2c40e3f34] POST /products 201 5.886 ms - 298","requestId":"eb4c8f7c-e25f-4ad7-9998-25f2c40e3f34","timestamp":"2026-03-02T13:58:58.596Z"}
+{"level":"info","message":"[72914afd-4714-46a7-abca-b65ec2eb7279] POST /products 201 4.448 ms - 298","requestId":"72914afd-4714-46a7-abca-b65ec2eb7279","timestamp":"2026-03-02T13:59:00.566Z"}
+{"level":"info","message":"[71c6a775-f5d2-4329-8cfa-fb402b706f1b] GET /products 200 6.549 ms - 1720","requestId":"71c6a775-f5d2-4329-8cfa-fb402b706f1b","timestamp":"2026-03-02T14:00:29.941Z"}
+{"level":"info","message":"[3ea0ba3b-3845-4ad4-8f5c-f51f3598cf86] GET /products?search=Samsung 200 6.015 ms - 333","requestId":"3ea0ba3b-3845-4ad4-8f5c-f51f3598cf86","timestamp":"2026-03-02T14:00:43.514Z"}
+{"level":"info","message":"[0b66b008-30fb-4e8d-87c3-999a449f81ad] GET /products?page=1&limit=5 200 9.743 ms - 1433","requestId":"0b66b008-30fb-4e8d-87c3-999a449f81ad","timestamp":"2026-03-02T14:01:32.709Z"}
+{"level":"info","message":"[be212e29-24df-46ae-ac16-adb6a0632ad5] GET /products/69a597a46afd6a7a23f15367 200 5.634 ms - 298","requestId":"be212e29-24df-46ae-ac16-adb6a0632ad5","timestamp":"2026-03-02T14:01:39.492Z"}
+{"level":"info","message":"[28710610-035e-43e2-bc30-cad7e932c875] PUT /products/69a597a46afd6a7a23f15367 200 12.400 ms - 298","requestId":"28710610-035e-43e2-bc30-cad7e932c875","timestamp":"2026-03-02T14:03:46.750Z"}
+{"level":"info","message":"[2bc9b3d6-fd57-480e-86e7-f09555c9b175] DELETE /products/69a597a46afd6a7a23f15367 200 5.890 ms - 320","requestId":"2bc9b3d6-fd57-480e-86e7-f09555c9b175","timestamp":"2026-03-02T14:03:56.135Z"}
+{"level":"info","message":"[b4f9acc4-2630-451e-9403-2f1d14276068] POST /products/send-email 202 3.953 ms - 65","requestId":"b4f9acc4-2630-451e-9403-2f1d14276068","timestamp":"2026-03-02T14:04:04.492Z"}
+{"level":"info","message":"Processing email job: 2","timestamp":"2026-03-02T14:04:04.493Z"}
+{"level":"info","message":"Email sent to test@example.com with subject: Welcome Email","timestamp":"2026-03-02T14:04:06.493Z"}
+{"level":"info","message":"Job 2 completed successfully","timestamp":"2026-03-02T14:04:06.499Z"}
+{"level":"info","message":"[40e9ef47-d84b-4659-a2df-d3fe4e757863] GET /health 200 0.318 ms - 15","requestId":"40e9ef47-d84b-4659-a2df-d3fe4e757863","timestamp":"2026-03-02T14:04:13.110Z"}
+{"level":"info","message":"[407183f1-091e-4281-b370-45ae4dc09644] GET /products 200 5.299 ms - 1445","requestId":"407183f1-091e-4281-b370-45ae4dc09644","timestamp":"2026-03-02T14:04:33.819Z"}
+{"level":"info","message":"[1bc5445c-376b-43e0-a0cc-ed10d54ab5df] GET /products?search=Samsung 200 6.514 ms - 333","requestId":"1bc5445c-376b-43e0-a0cc-ed10d54ab5df","timestamp":"2026-03-02T14:04:49.641Z"}
+{"level":"info","message":"[5b797d26-9df5-48ab-8f9c-ff5c4cacb81e] GET /products?sort=price:desc 200 5.357 ms - 1445","requestId":"5b797d26-9df5-48ab-8f9c-ff5c4cacb81e","timestamp":"2026-03-02T14:05:04.366Z"}
+{"level":"info","message":"[ca22367c-b077-4a32-9443-5beb8b6bbe41] GET /products/69a597a46afd6a7a23f15367 404 4.205 ms - 157","requestId":"ca22367c-b077-4a32-9443-5beb8b6bbe41","timestamp":"2026-03-02T14:06:33.274Z"}
+{"level":"info","message":"[d5bce69d-6786-4a0f-96d0-54e002d4173e] GET /products/69a597a46afd6a7a23f15367 404 3.155 ms - 157","requestId":"d5bce69d-6786-4a0f-96d0-54e002d4173e","timestamp":"2026-03-02T14:06:41.809Z"}
+{"level":"info","message":"[b348fd2e-53b6-4080-b2b7-8a5dee17cfa0] PUT /products/69a597a46afd6a7a23f15367 404 4.803 ms - 157","requestId":"b348fd2e-53b6-4080-b2b7-8a5dee17cfa0","timestamp":"2026-03-02T14:06:48.134Z"}
+{"level":"info","message":"[c565e706-7d68-4584-83d6-d870aae76c88] POST /products 201 6.910 ms - 298","requestId":"c565e706-7d68-4584-83d6-d870aae76c88","timestamp":"2026-03-02T14:06:59.268Z"}
+{"level":"info","message":"[2ba20936-04a8-43cd-addf-a1d5bdd07e3d] GET /products/69a599836afd6a7a23f1537b 200 3.799 ms - 298","requestId":"2ba20936-04a8-43cd-addf-a1d5bdd07e3d","timestamp":"2026-03-02T14:07:06.312Z"}
+{"level":"info","message":"[68acc938-8f66-4bcf-80a9-9e76e7cffd52] PUT /products/69a599836afd6a7a23f1537b 200 4.434 ms - 298","requestId":"68acc938-8f66-4bcf-80a9-9e76e7cffd52","timestamp":"2026-03-02T14:07:18.211Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:11:48.729Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:11:48.837Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:11:48.855Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:11:48.857Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:11:48.867Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:13:53.555Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:13:53.669Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:13:53.681Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:13:53.682Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:13:53.693Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:13:55.869Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:13:55.936Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:13:55.942Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:13:55.943Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:13:55.947Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:02.484Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:02.526Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:02.533Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:02.533Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:02.536Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:06.240Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:06.408Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:06.420Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:06.421Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:06.428Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:09.152Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:09.215Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:09.224Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:09.225Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:09.231Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:21.519Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:21.657Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:21.673Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:21.674Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:21.683Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:26.003Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:26.129Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:26.144Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:26.145Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:26.152Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:29.171Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:29.237Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:29.245Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:29.246Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:29.251Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:31.887Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:31.949Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:31.958Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:31.958Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:31.962Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:34.518Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:34.587Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:34.596Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:34.596Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:34.599Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:37.680Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:37.804Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:37.818Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:37.819Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:37.824Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:41.289Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:41.384Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:41.389Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:41.390Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:41.394Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:44.465Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:44.555Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:44.560Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:44.560Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:44.565Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:51.609Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:51.677Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:51.683Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:51.684Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:51.687Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:14:57.776Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:14:57.839Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:14:57.846Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:14:57.846Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:14:57.850Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:01.163Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:01.247Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:01.258Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:01.258Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:01.261Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:15.971Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:16.045Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:16.050Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:16.051Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:16.054Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:18.776Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:18.863Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:18.878Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:18.879Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:18.891Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:28.435Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:28.561Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:28.568Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:28.568Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:28.571Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:30.315Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:30.376Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:30.387Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:30.388Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:30.396Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:34.197Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:34.282Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:34.288Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:34.289Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:34.292Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:37.775Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:37.861Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:37.872Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:37.872Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:37.880Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:41.415Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:41.486Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:41.494Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:41.495Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:41.502Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:44.874Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:44.936Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:44.943Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:44.944Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:44.947Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:47.028Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:47.088Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:47.094Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:47.094Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:47.097Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:15:58.423Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:15:58.493Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:15:58.499Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:15:58.500Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:15:58.504Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:02.714Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:02.797Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:02.812Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:02.813Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:02.818Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:11.332Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:11.397Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:11.403Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:11.404Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:11.410Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:17.134Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:17.201Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:17.210Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:17.211Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:17.214Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:38.305Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:38.390Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:38.403Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:38.403Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:38.406Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:40.212Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:40.257Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:40.261Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:40.262Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:40.265Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:48.640Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:48.699Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:48.704Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:48.704Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:48.707Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:52.118Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:52.195Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:52.207Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:52.207Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:52.213Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:55.094Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:55.207Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:55.215Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:55.216Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:55.219Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:16:57.836Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:16:57.965Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:16:57.980Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:16:57.980Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:16:57.990Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:00.400Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:00.541Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:00.554Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:00.555Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:00.561Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:02.931Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:02.989Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:02.994Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:02.994Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:02.997Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:12.925Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:12.993Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:13.008Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:13.009Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:13.016Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:20.478Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:20.523Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:20.528Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:20.529Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:20.533Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:23.341Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:23.413Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:23.420Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:23.421Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:23.424Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:36.587Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:36.655Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:36.665Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:36.665Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:36.670Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:39.512Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:39.576Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:39.586Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:39.586Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:39.589Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:41.438Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:41.512Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:41.519Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:41.520Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:41.524Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:54.389Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:54.482Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:54.499Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:54.500Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:54.508Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:17:57.076Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:17:57.145Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:17:57.154Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:17:57.154Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:17:57.157Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:18:00.665Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:18:00.734Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:18:00.743Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:18:00.744Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:18:00.748Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:18:07.446Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:18:07.508Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:18:07.514Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:18:07.514Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:18:07.518Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:18:09.981Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:18:10.058Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:18:10.063Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:18:10.064Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:18:10.068Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:18:15.096Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:18:15.178Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:18:15.193Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:18:15.194Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:18:15.200Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T14:18:25.499Z"}
+{"level":"info","message":"Starting server...","timestamp":"2026-03-02T14:18:32.451Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-02T14:18:32.542Z"}
+{"level":"info","message":"Security middlewares loaded","timestamp":"2026-03-02T14:18:32.550Z"}
+{"level":"info","message":"Routes mounted","timestamp":"2026-03-02T14:18:32.551Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-02T14:18:32.555Z"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2026-03-02T14:18:34.282Z"}

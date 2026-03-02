@@ -64,15 +64,15 @@ const accountSchema = new mongoose.Schema(
   }
 );
 
-// Compound index for status filtering + sorting
+
 accountSchema.index({ status: 1, createdAt: -1 });
 
-// Virtual field
+
 accountSchema.virtual("fullName").get(function () {
   return `${this.firstName} ${this.lastName}`;
 });
 
-// Pre-save hook for hashing password
+
 accountSchema.pre("save", async function () {
   if (!this.isModified("password")) return;
 
