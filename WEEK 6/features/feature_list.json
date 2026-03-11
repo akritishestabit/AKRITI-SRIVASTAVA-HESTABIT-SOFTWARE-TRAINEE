@@ -1,0 +1,10 @@
+{
+    "selected_features": [
+        "Sex_male",
+        "FarePerPerson",
+        "Fare",
+        "Pclass",
+        "FamilySize",
+        "Age"
+    ]
+}
