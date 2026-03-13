@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 900px;
+    width: 700px;
     background: #2c2c2c;
     padding: 20px;
 
@@ -26,7 +26,7 @@ body {
         70px     
         180px    
         160px    
-        70px;    
+        85px;    
 
     gap: 15px;
 }
