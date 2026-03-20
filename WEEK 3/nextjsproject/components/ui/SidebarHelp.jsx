@@ -1,5 +1,3 @@
-"use client";
-
 import { FiHelpCircle } from "react-icons/fi";
 
 export default function SidebarHelp() {

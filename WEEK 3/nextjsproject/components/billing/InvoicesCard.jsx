@@ -1,5 +1,3 @@
-"use client";
-
 import { FiDownload } from "react-icons/fi";
 
 const invoices = [
@@ -45,7 +43,7 @@ export default function InvoicesCard() {
               <span className="text-gray-800 font-semibold">
                 {item.amount}
               </span>
-              <FiDownload className="text-gray-400 cursor-pointer hover:text-gray-600" />
+              <FiDownload className="text-gray-400 cursor-pointer hover:text-gray-800" />
             </div>
           </div>
         ))}

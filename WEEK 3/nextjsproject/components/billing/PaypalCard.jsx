@@ -1,5 +1,3 @@
-"use client";
-
 import { FaPaypal } from "react-icons/fa";
 
 export default function PaypalCard() {

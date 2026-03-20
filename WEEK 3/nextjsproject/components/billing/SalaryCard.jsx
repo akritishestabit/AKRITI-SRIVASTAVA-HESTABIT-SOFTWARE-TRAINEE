@@ -1,5 +1,3 @@
-"use client";
-
 import { FiCreditCard } from "react-icons/fi";
 
 export default function SalaryCard() {

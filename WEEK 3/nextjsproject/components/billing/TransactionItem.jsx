@@ -1,5 +1,3 @@
-"use client";
-
 import { FiArrowUp, FiArrowDown, FiClock } from "react-icons/fi";
 
 export default function TransactionItem({

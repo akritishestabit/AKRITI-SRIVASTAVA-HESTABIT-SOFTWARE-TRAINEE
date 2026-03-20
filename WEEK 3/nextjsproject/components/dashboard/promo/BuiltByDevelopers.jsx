@@ -1,4 +1,4 @@
-"use client";
+
 
 export default function BuiltByDevelopers() {
   return (
@@ -24,9 +24,10 @@ export default function BuiltByDevelopers() {
         </div>
 
         
-        <button className="text-sm font-medium text-gray-900 flex items-center gap-1 hover:underline">
-          Read more
-          <span className="text-lg">→</span>
+        <button className="text-sm font-medium text-gray-900 flex items-center gap-1 hover:underline"> 
+          Read more 
+          <span className="text-lg">-</span>
+          
         </button>
       </div>
 

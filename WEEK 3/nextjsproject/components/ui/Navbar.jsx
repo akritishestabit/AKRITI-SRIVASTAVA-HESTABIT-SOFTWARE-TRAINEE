@@ -1,13 +1,12 @@
-"use client";
-
+"use client"
 import { usePathname } from "next/navigation";
 import { FiSearch, FiSettings, FiBell, FiUser } from "react-icons/fi";
+import Link from "next/link";
 
 const routeMap = {
   "/": "Dashboard",
   "/tables": "Tables",
   "/billing": "Billing",
-  "/rtl": "RTL",
   "/profile": "Profile",
   "/sign-in": "Sign In",
   "/sign-up": "Sign Up",
@@ -40,10 +39,14 @@ export default function Navbar() {
           />
         </div>
 
-        <button className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-teal-600">
-          <FiUser />
-          Sign In
-        </button>
+        
+        <Link
+            href="/auth/signin"
+            className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-teal-600"
+          >
+            <FiUser />
+            Sign In
+          </Link>
 
         <button className="p-2 rounded-full hover:bg-gray-100">
           <FiSettings className="text-gray-600" />

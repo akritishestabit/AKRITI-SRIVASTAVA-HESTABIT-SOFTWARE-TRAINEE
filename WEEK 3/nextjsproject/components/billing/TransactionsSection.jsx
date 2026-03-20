@@ -1,5 +1,3 @@
-"use client";
-
 import TransactionItem from "./TransactionItem";
 
 export default function TransactionsSection() {

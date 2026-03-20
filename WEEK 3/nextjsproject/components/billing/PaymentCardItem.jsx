@@ -1,5 +1,3 @@
-"use client";
-
 import { FiTrash2 } from "react-icons/fi";
 
 export default function PaymentCardItem({ brand, number }) {

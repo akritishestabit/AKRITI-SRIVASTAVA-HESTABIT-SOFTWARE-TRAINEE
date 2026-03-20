@@ -9,13 +9,13 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-gray-100 relative">
 
-      {/* HERO SECTION (FULL WIDTH TOP) */}
+      
       <div
         className="absolute top-0 left-0 w-full h-[420px]
                    bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600
                    rounded-b-[30px] overflow-hidden"
       >
-        {/* Wave Overlay */}
+        
         <div className="absolute inset-0 opacity-25">
           <svg
             className="w-full h-full"
@@ -37,7 +37,7 @@ export default function SignUpPage() {
           </svg>
         </div>
 
-        {/* Welcome Text */}
+        
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
           <h1 className="text-3xl font-bold mb-3">Welcome!</h1>
           <p className="text-sm opacity-90 max-w-md">
@@ -46,12 +46,12 @@ export default function SignUpPage() {
         </div>
       </div>
 
-      {/* NAVBAR (OVER HERO) */}
+     
       <div className="relative z-30 pt-6">
         <AuthNavbar />
       </div>
 
-      {/* SIGNUP CARD */}
+     
       <div className="relative z-20 flex justify-center -mt-[-195px]">
         <div className="bg-white w-[420px] rounded-2xl shadow-xl p-8">
 

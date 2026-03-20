@@ -1,5 +1,3 @@
-"use client";
-
 import BillingInfoCard from "./BillingInfoCard";
 
 export default function BillingInformationSection() {

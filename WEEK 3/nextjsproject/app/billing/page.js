@@ -4,24 +4,17 @@ import TransactionsSection from "@/components/billing/TransactionsSection";
 
 export default function BillingPage() {
   return (
-    
-        <div className="p-6 space-y-6">
+    <div className="p-6 space-y-6">
       <TopCardsSection />
       <div className="mt-6 grid grid-cols-12 gap-6">
+        <div className="col-span-12 lg:col-span-8">
+          <BillingInformationSection />
+        </div>
 
-  <div className="col-span-12 lg:col-span-8">
-    <BillingInformationSection />
-  </div>
-
-  <div className="col-span-12 lg:col-span-4">
-    
-    <TransactionsSection />
-  </div>
-
-</div>
+        <div className="col-span-12 lg:col-span-4">
+          <TransactionsSection />
+        </div>
+      </div>
     </div>
-      
-    
-    
   );
 }

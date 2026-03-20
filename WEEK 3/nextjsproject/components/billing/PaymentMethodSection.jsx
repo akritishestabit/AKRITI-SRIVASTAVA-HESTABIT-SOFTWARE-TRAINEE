@@ -1,5 +1,3 @@
-"use client";
-
 import PaymentCardItem from "./PaymentCardItem";
 
 export default function PaymentMethodSection() {
@@ -12,7 +10,7 @@ export default function PaymentMethodSection() {
           Payment Method
         </h3>
 
-        <button className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+        <button className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-teal-400 transition">
           ADD A NEW CARD
         </button>
       </div>

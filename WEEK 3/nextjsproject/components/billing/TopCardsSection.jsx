@@ -1,5 +1,3 @@
-
-
 import CreditCard from "./CreditCard";
 import SalaryCard from "./SalaryCard";
 import PaypalCard from "./PaypalCard";

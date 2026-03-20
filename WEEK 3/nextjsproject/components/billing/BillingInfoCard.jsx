@@ -1,5 +1,3 @@
-"use client";
-
 import { FiTrash2, FiEdit } from "react-icons/fi";
 
 export default function BillingInfoCard({
@@ -30,12 +28,12 @@ export default function BillingInfoCard({
 
      
       <div className="flex gap-5 text-sm font-medium">
-        <button className="flex items-center gap-2 text-red-500 hover:opacity-80 transition">
+        <button className="flex items-center gap-2 text-red-500 hover:opacity-40 transition">
           <FiTrash2 />
           DELETE
         </button>
 
-        <button className="flex items-center gap-2 text-gray-600 hover:opacity-80 transition">
+        <button className="flex items-center gap-2 text-gray-600 hover:opacity-40 transition">
           <FiEdit />
           EDIT
         </button>

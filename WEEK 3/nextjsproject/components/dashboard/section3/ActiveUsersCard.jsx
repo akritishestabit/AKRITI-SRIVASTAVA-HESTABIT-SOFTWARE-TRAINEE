@@ -1,5 +1,3 @@
-"use client";
-
 import ActiveUsersStats from "./ActiveUsersStats";
 
 export default function ActiveUsersCard() {

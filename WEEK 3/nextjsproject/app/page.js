@@ -1,21 +1,3 @@
-// // app/page.js
-// import { redirect } from "next/navigation";
-
-// export default function HomePage() {
-//   redirect("/dashboard");
-// }
-// export default function Home() {
-//   return (
-//     <div className="h-screen flex items-center justify-center">
-//       <a
-//         href="/dashboard"
-//         className="px-6 py-3 bg-teal-500 text-white rounded-lg"
-//       >
-//         Go to Dashboard
-//       </a>
-//     </div>
-//   );
-// }
 "use client";
 
 import Link from "next/link";
@@ -27,18 +9,18 @@ export default function Home() {
       
       <div className="text-center max-w-2xl">
 
-        {/* Heading */}
+       
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
           Welcome to <span className="text-teal-500">Purity UI Dashboard</span>
         </h1>
 
-        {/* Subtext */}
+        
         <p className="mt-6 text-gray-600 text-lg">
           A modern and modular dashboard built with Next.js and Tailwind CSS.
           Clean structure. Scalable components. Professional UI.
         </p>
 
-        {/* Buttons */}
+       
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
 
           <Link

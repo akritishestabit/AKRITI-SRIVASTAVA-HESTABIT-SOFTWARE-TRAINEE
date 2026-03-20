@@ -20,5 +20,7 @@ headers.forEach(header => {
             content.style.maxHeight = content.scrollHeight + "px";
             icon.textContent = "−";
         }
+
+        
     });
 });

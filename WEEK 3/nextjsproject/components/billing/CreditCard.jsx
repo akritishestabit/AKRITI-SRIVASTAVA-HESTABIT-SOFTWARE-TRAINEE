@@ -1,5 +1,3 @@
-"use client";
-
 export default function CreditCard() {
   return (
     <div

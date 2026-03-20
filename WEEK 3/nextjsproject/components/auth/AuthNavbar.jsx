@@ -4,17 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiUser, FiLogIn } from "react-icons/fi";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function AuthNavbar() {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   const isSignup = pathname === "/auth/signup";
   const isSignin = pathname === "/auth/signin";
 
   return (
     <header className="w-full flex justify-center mt-6 relative z-30">
-      
-      
       <div
         className={`w-[92%] max-w-6xl px-8 py-3 flex items-center justify-between rounded-2xl transition
         ${
@@ -23,8 +29,7 @@ export default function AuthNavbar() {
             : "bg-white shadow-md"
         }`}
       >
-        
-        
+        {/* Rest same */}
         <div className="flex items-center gap-2">
           <Image
             src="/logo.svg"

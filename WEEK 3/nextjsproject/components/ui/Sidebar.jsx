@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
@@ -21,7 +20,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 min-h-screen bg-white flex flex-col">
       
-      {/* LOGO */}
+      
       <div className="px-6 py-6 flex items-center gap-2">
         <Image src="/logo.svg" alt="Purity UI Logo" width={28} height={28} />
         <span className="text-sm font-bold tracking-wide text-gray-800">
@@ -29,7 +28,7 @@ export default function Sidebar() {
         </span>
       </div>
 
-      {/* NAV */}
+     
       <nav className="px-3 space-y-1">
         <SidebarItem
           icon={FiHome}

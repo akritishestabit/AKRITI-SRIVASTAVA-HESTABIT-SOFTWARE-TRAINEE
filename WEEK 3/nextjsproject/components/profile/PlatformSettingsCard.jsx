@@ -52,7 +52,6 @@ export default function PlatformSettingsCard() {
         </div>
       </div>
 
-      {/* APPLICATION SECTION */}
       <div>
         <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
           Application

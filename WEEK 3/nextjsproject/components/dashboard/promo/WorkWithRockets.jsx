@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function WorkWithRockets() {
@@ -12,7 +10,7 @@ export default function WorkWithRockets() {
         alt="Work with the Rockets"
         fill
         priority
-        quality={100}
+        quality={75}
         sizes="(max-width: 1280px) 100vw, 50vw"
         className="object-cover object-center"
       />

@@ -46,7 +46,10 @@ function renderTodos() {
 function addTodo() {
     try {
         const value = todoInput.value.trim();
-        if (value === "") return;
+        if (value === "") {
+            alert("Please enter something to add in todo");
+            return;
+        }
 
         todos.push(value);
         saveTodos();
@@ -70,11 +73,16 @@ function deleteTodo(index) {
 function editTodo(index) {
     try {
         const updated = prompt("Edit your task:", todos[index]);
+        if(updated == ""){
+            alert("add something");
+            return;
+        }
         if (updated !== null && updated.trim() !== "") {
             todos[index] = updated.trim();
             saveTodos();
             renderTodos();
         }
+        
     } catch (error) {
         console.error("Error while editing todo", error);
     }
