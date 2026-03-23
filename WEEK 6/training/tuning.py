@@ -9,7 +9,7 @@ print("Loading data...")
 X_train = pd.read_csv("data/features/X_train.csv")
 y_train = pd.read_csv("data/features/y_train.csv").values.ravel()
 
-# Load selected features
+
 with open("features/feature_list.json", "r") as f:
     selected_features = json.load(f)["selected_features"]
 
@@ -17,17 +17,17 @@ X_train = X_train[selected_features]
 
 print("Starting hyperparameter tuning...")
 
-# Model
+
 model = RandomForestClassifier(random_state=42)
 
-# Parameters to test
+
 param_grid = {
     "n_estimators": [50, 100, 200],
     "max_depth": [None, 5, 10],
     "min_samples_split": [2, 5]
 }
 
-# Grid Search
+
 grid_search = GridSearchCV(
     model,
     param_grid,
@@ -41,7 +41,7 @@ grid_search.fit(X_train, y_train)
 print("Best Parameters:", grid_search.best_params_)
 print("Best Score:", grid_search.best_score_)
 
-# Save results
+
 os.makedirs("tuning", exist_ok=True)
 
 results = {

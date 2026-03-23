@@ -10,9 +10,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
 
-# -------------------------------
-# 1️⃣ Load Data
-# -------------------------------
+
 print("Loading datasets...")
 
 X_train = pd.read_csv("data/features/X_train.csv")
@@ -20,9 +18,7 @@ X_test = pd.read_csv("data/features/X_test.csv")
 y_train = pd.read_csv("data/features/y_train.csv").values.ravel()
 y_test = pd.read_csv("data/features/y_test.csv").values.ravel()
 
-# -------------------------------
-# 2️⃣ Load Selected Features
-# -------------------------------
+
 print("Loading selected features...")
 
 with open("features/feature_list.json", "r") as f:
@@ -33,9 +29,7 @@ X_test = X_test[selected_features]
 
 print("Selected Features:", selected_features)
 
-# -------------------------------
-# 3️⃣ Define Models
-# -------------------------------
+
 models = {
     "LogisticRegression": LogisticRegression(max_iter=1000),
     "RandomForest": RandomForestClassifier(n_estimators=100, random_state=42),
@@ -45,9 +39,7 @@ models = {
 
 results = {}
 
-# -------------------------------
-# 4️⃣ Train + Cross Validation
-# -------------------------------
+
 print("\nTraining models with cross-validation...\n")
 
 for name, model in models.items():
@@ -69,26 +61,20 @@ for name, model in models.items():
 
     print(f"{name} done.\n")
 
-# -------------------------------
-# 5️⃣ Select Best Model
-# -------------------------------
+
 best_model_name = max(results, key=lambda x: results[x]["accuracy"])
 best_model = models[best_model_name]
 
 print("Best Model:", best_model_name)
 
-# -------------------------------
-# 6️⃣ Save Best Model
-# -------------------------------
+
 os.makedirs("models", exist_ok=True)
 
 joblib.dump(best_model, "models/best_model.pkl")
 
 print("Best model saved successfully!")
 
-# -------------------------------
-# 7️⃣ Save Metrics
-# -------------------------------
+
 os.makedirs("evaluation", exist_ok=True)
 
 metrics_output = {
@@ -101,9 +87,7 @@ with open("evaluation/metrics.json", "w") as f:
 
 print("Metrics saved successfully!")
 
-# -------------------------------
-# 8️⃣ Confusion Matrix
-# -------------------------------
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
