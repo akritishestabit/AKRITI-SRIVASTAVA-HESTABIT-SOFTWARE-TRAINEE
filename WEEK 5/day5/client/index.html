@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Frontend Running</h1>
+
+<button onclick="callBackend()">Call Backend</button>
+
+<p id="data"></p>
+
+<script>
+function callBackend() {
+  fetch("/api")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("data").innerText = data;
+    })
+    .catch(() => {
+      document.getElementById("data").innerText = "Backend Error";
+    });
+}
+</script>
+
+</body>
+</html>

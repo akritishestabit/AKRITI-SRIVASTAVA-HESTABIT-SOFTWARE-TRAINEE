@@ -1,36 +1,79 @@
-# Service Architecture
+# Service Architecture (Docker Compose - Multi Container App)
 
-This project uses Docker Compose to run two services together: a backend server and a MongoDB database.
+## Overview
 
-## Backend Service
-The backend is built using Node.js and Express.  
-It runs inside a Docker container and listens on port 5000.  
-The backend handles requests from the user and communicates with the MongoDB database.
+This setup consists of three main services:
 
-Example:
-http://localhost:5000
+- client (React frontend)
+- backend (Node.js server)
+- mongo (MongoDB database)
 
-## MongoDB Service
-MongoDB runs in a separate Docker container using the official Mongo image.  
-It stores the application data and runs on port 27017.
+All services run inside separate Docker containers but are connected through Docker Compose.
 
-## Docker Compose
-Docker Compose is used to start both containers together.  
-It also automatically creates a network so that the backend container can communicate with the MongoDB container.
+---
 
-## Container Communication
-The backend connects to MongoDB using the service name:
+## Architecture
 
-mongodb://mongo:27017
+client → backend → mongo
 
-Here `mongo` is the service name defined in docker-compose.
+- Client sends request to backend
+- Backend processes request and interacts with MongoDB
+- MongoDB stores and retrieves data
 
-## Application Flow
+---
 
-User → Backend (Node.js container) → MongoDB container
+## Communication
 
-1. User sends a request to the backend.
-2. Backend processes the request.
-3. Backend communicates with MongoDB.
-4. MongoDB returns the data.
-5. Backend sends the response to the user.
+- Containers communicate using service names
+- backend connects to Mongo using:
+  mongodb://mongo:27017/dbname
+- No need for localhost inside containers
+
+---
+
+## Networking
+
+- Docker Compose creates a default network
+- All services are part of the same network
+- Services can directly talk using their names
+
+---
+
+## Ports
+
+- client → exposed to browser (e.g., localhost:3000)
+- backend → exposed for API (e.g., localhost:5000)
+- mongo → usually not exposed externally
+
+---
+
+## Volumes (Persistence)
+
+- MongoDB uses volume for data storage
+- Data remains safe even if container stops or restarts
+
+---
+
+## Flow
+
+1. User opens frontend in browser  
+2. Frontend sends API request to backend  
+3. Backend processes request  
+4. Backend reads/writes data from MongoDB  
+5. Response is sent back to frontend  
+
+---
+
+## Key Points
+
+- Each service runs in isolation (separate container)
+- Services communicate via Docker network
+- Volumes ensure data persistence
+- One command runs entire system:
+  docker compose up -d
+
+---
+
+## Summary
+
+This architecture demonstrates how multiple services (frontend, backend, database) can run together using Docker Compose with proper networking, communication, and persistent storage.

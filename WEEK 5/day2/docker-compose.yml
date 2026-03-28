@@ -1,6 +1,13 @@
 version: "3.9"
 
 services:
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
   backend:
     build: ./server
     ports:
@@ -10,5 +17,8 @@ services:
 
   mongo:
     image: mongo
-    ports:
-      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

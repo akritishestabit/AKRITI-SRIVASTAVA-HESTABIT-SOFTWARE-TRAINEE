@@ -1,26 +1,23 @@
-// const express = require("express");
 
-// const app = express();
-// const PORT = 3000;
-
-// app.get("/", (req, res) => {
-//   res.send("Hello from backend container");
-// });
-
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
 
 const express = require("express");
-const os = require("os");
+const mongoose = require("mongoose");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
-app.get("/", (req, res) => {
-  res.send(`Response from container: ${os.hostname()}`);
+mongoose.connect(process.env.MONGO_URL)
+  .then(() => console.log("Mongo connected"))
+  .catch(err => console.log(err));
+
+app.get("/api", (req, res) => {
+  res.send("Hello from Backend");
+});
+
+app.get("/health", (req, res) => {
+  res.send("OK");
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log("Server running on " + PORT);
 });
