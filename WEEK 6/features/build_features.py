@@ -1,63 +1,100 @@
-import pandas as pd
+
 import os
-from sklearn.preprocessing import StandardScaler
+import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 
-print("Loading dataset...")
+
+INPUT_PATH = "data/processed/final.csv"
+OUTPUT_DIR = "data/features"
+
+def load_data(path):
+    print("Loading cleaned data...")
+    return pd.read_csv(path)
 
 
-df = pd.read_csv("data/processed/final.csv")
+def create_features(df):
+    print("Creating new features...")
 
-print("Dataset loaded successfully")
+    # Family size
+    df["family_size"] = df["SibSp"] + df["Parch"] + 1
 
+    # is alone
+    df["is_alone"] = (df["family_size"] == 1).astype(int)
 
-y = df["Survived"]
+    # fare per person
+    df["fare_per_person"] = df["Fare"] / df["family_size"]
 
+    # has family
+    df["has_family"] = ((df["SibSp"] + df["Parch"]) > 0).astype(int)
 
+    # age group
+    df["age_group"] = pd.cut(
+        df["Age"],
+        bins=[0, 12, 18, 35, 60, 100],
+        labels=["child", "teen", "young", "adult", "senior"]
+    )
 
-X = df.drop("Survived", axis=1)
+    # log transform of Fare
+    df["fare_log"] = np.log1p(df["Fare"])
 
+    # age-Fare ratio
+    df["age_fare_ratio"] = df["Age"] / (df["Fare"] + 1)
 
-X = X.drop(["Name", "Ticket", "Cabin", "PassengerId"], axis=1, errors="ignore")
+    # pclass-Fare interaction
+    df["pclass_fare"] = df["Pclass"] * df["Fare"]
 
+    # age squared
+    df["age_squared"] = df["Age"] ** 2
 
-print("Performing categorical encoding...")
+    # fare squared
+    df["fare_squared"] = df["Fare"] ** 2
 
-X = pd.get_dummies(X, columns=["Sex", "Embarked"], drop_first=True)
-
-
-print("Creating new features...")
-
-X["FamilySize"] = df["SibSp"] + df["Parch"] + 1
-X["IsAlone"] = (X["FamilySize"] == 1).astype(int)
-X["FarePerPerson"] = df["Fare"] / X["FamilySize"]
-
-
-print("Scaling numerical features...")
-
-scaler = StandardScaler()
-
-num_cols = ["Age", "Fare"]
-
-X[num_cols] = scaler.fit_transform(X[num_cols])
-
-
-print("Splitting dataset into train and test...")
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+    return df
 
 
-os.makedirs("data/features", exist_ok=True)
+def encode_features(df):
+    print("Encoding categorical features...")
+
+    
+    df = pd.get_dummies(df, columns=["Sex", "Embarked", "age_group"], drop_first=True)
+
+    return df
 
 
-print("Saving processed feature datasets...")
+def split_data(df):
+    print("Splitting data...")
 
-X_train.to_csv("data/features/X_train.csv", index=False)
-X_test.to_csv("data/features/X_test.csv", index=False)
+    X = df.drop("Survived", axis=1)
+    y = df["Survived"]
 
-y_train.to_csv("data/features/y_train.csv", index=False)
-y_test.to_csv("data/features/y_test.csv", index=False)
+    return train_test_split(X, y, test_size=0.2, random_state=42)
 
-print("Feature engineering pipeline completed successfully!")
+
+def save_data(X_train, X_test, y_train, y_test):
+    print("Saving feature datasets...")
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    X_train.to_csv(f"{OUTPUT_DIR}/X_train.csv", index=False)
+    X_test.to_csv(f"{OUTPUT_DIR}/X_test.csv", index=False)
+    y_train.to_csv(f"{OUTPUT_DIR}/y_train.csv", index=False)
+    y_test.to_csv(f"{OUTPUT_DIR}/y_test.csv", index=False)
+
+
+def run_pipeline():
+    df = load_data(INPUT_PATH)
+
+    df = create_features(df)
+    df = encode_features(df)
+
+    X_train, X_test, y_train, y_test = split_data(df)
+
+    save_data(X_train, X_test, y_train, y_test)
+
+    print("Feature pipeline completed!")
+
+
+if __name__ == "__main__":
+    run_pipeline()
+

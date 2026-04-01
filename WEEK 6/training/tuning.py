@@ -1,55 +1,81 @@
-import pandas as pd
+
 import json
-import os
-from sklearn.model_selection import GridSearchCV
+import joblib
+import pandas as pd
+
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
 
-print("Loading data...")
 
-X_train = pd.read_csv("data/features/X_train.csv")
-y_train = pd.read_csv("data/features/y_train.csv").values.ravel()
-
-
-with open("features/feature_list.json", "r") as f:
-    selected_features = json.load(f)["selected_features"]
-
-X_train = X_train[selected_features]
-
-print("Starting hyperparameter tuning...")
+# ---------------- LOAD DATA ----------------
+def load_data():
+    X_train = pd.read_csv("data/features/X_train.csv")
+    y_train = pd.read_csv("data/features/y_train.csv").values.ravel()
+    return X_train, y_train
 
 
-model = RandomForestClassifier(random_state=42)
+# ---------------- TUNING ----------------
+def tune_model():
+
+    X_train, y_train = load_data()
+
+    # Base model
+    model = RandomForestClassifier(random_state=42)
+
+    # Hyperparameter grid
+    param_grid = {
+        "n_estimators": [100, 200, 300],
+        "max_depth": [3, 5, 7],
+        "min_samples_split": [2, 5],
+        "min_samples_leaf": [1, 2]
+    }
+
+    # Cross-validation
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Grid Search
+    grid = GridSearchCV(
+        estimator=model,
+        param_grid=param_grid,
+        cv=cv,
+        scoring="roc_auc",
+        n_jobs=-1,
+        verbose=1
+    )
+
+    print("Starting hyperparameter tuning...")
+    grid.fit(X_train, y_train)
+
+    print("\nBest Parameters:", grid.best_params_)
+    print("Best CV ROC-AUC:", grid.best_score_)
+
+    return grid
 
 
-param_grid = {
-    "n_estimators": [50, 100, 200],
-    "max_depth": [None, 5, 10],
-    "min_samples_split": [2, 5]
-}
+# ---------------- SAVE RESULTS ----------------
+def save_results(grid):
+
+    # Save best model
+    joblib.dump(grid.best_estimator_, "models/tuned_model.pkl")
+
+    # Save results
+    results = {
+        "best_params": grid.best_params_,
+        "best_score": grid.best_score_
+    }
+
+    with open("tuning/results.json", "w") as f:
+        json.dump(results, f, indent=4)
+
+    print("\nTuned model and results saved!")
 
 
-grid_search = GridSearchCV(
-    model,
-    param_grid,
-    cv=5,
-    scoring="accuracy",
-    n_jobs=-1
-)
+# ---------------- MAIN ----------------
+def run_tuning():
 
-grid_search.fit(X_train, y_train)
-
-print("Best Parameters:", grid_search.best_params_)
-print("Best Score:", grid_search.best_score_)
+    grid = tune_model()
+    save_results(grid)
 
 
-os.makedirs("tuning", exist_ok=True)
-
-results = {
-    "best_params": grid_search.best_params_,
-    "best_score": grid_search.best_score_
-}
-
-with open("tuning/results.json", "w") as f:
-    json.dump(results, f, indent=4)
-
-print("Tuning results saved!")
+if __name__ == "__main__":
+    run_tuning()

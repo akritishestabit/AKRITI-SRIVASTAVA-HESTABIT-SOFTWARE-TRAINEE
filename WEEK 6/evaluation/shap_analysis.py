@@ -1,47 +1,79 @@
+
+import os
 import shap
-import pandas as pd
 import joblib
-import json
-import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 
-print("Loading model...")
 
-model = joblib.load("models/best_model.pkl")
 
-X_test = pd.read_csv("data/features/X_test.csv")
+def load_data():
+    X_train = pd.read_csv("data/features/X_train.csv")
+    return X_train
 
-# Load selected features
-with open("features/feature_list.json", "r") as f:
-    selected_features = json.load(f)["selected_features"]
 
-X_test = X_test[selected_features]
 
-# -------------------------
-# HARD FIX (important)
-# -------------------------
+def load_model():
+    model = joblib.load("models/tuned_model.pkl")
+    return model
 
-# convert everything to float
-X_test = X_test.apply(pd.to_numeric, errors='coerce')
 
-# replace NaN
-X_test = X_test.fillna(0)
 
-# convert to numpy float
-X_test = X_test.astype(float)
+def plot_feature_importance(model, X_train):
 
-print("Data types after fix:")
-print(X_test.dtypes)
+    print("Generating feature importance...")
 
-print("Running SHAP analysis...")
+    importances = model.feature_importances_
+    feature_names = X_train.columns
 
-# Use TreeExplainer explicitly (important)
-explainer = shap.TreeExplainer(model)
+  
+    df = pd.DataFrame({
+        "feature": feature_names,
+        "importance": importances
+    }).sort_values(by="importance", ascending=False)
 
-shap_values = explainer.shap_values(X_test)
+    # Plot
+    plt.figure(figsize=(8, 5))
+    plt.barh(df["feature"], df["importance"])
+    plt.gca().invert_yaxis()
+    plt.title("Feature Importance")
 
-# Plot
-shap.summary_plot(shap_values, X_test, show=False)
-plt.savefig("evaluation/shap_summary.png")
+    plt.tight_layout()
+    plt.savefig("evaluation/feature_importance.png")
+    plt.close()
 
-print("SHAP summary plot saved!")
+    print("Feature importance saved!")
+
+
+
+def plot_shap(model, X_train):
+
+    print("Generating SHAP summary plot...")
+
+  
+    explainer = shap.TreeExplainer(model)
+
+    shap_values = explainer.shap_values(X_train)
+
+   
+    shap.summary_plot(shap_values, X_train, show=False)
+
+    plt.savefig("evaluation/shap_summary.png")
+    plt.close()
+
+    print("SHAP summary saved!")
+
+
+def run_analysis():
+
+    os.makedirs("evaluation", exist_ok=True)
+
+    X_train = load_data()
+    model = load_model()
+
+    plot_feature_importance(model, X_train)
+    plot_shap(model, X_train)
+
+
+if __name__ == "__main__":
+    run_analysis()

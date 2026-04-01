@@ -1,31 +1,48 @@
+
 import pandas as pd
-import json
-import matplotlib.pyplot as plt
 from sklearn.feature_selection import mutual_info_classif
+import json
+
+INPUT_PATH = "data/features/X_train.csv"
+TARGET_PATH = "data/features/y_train.csv"
+OUTPUT_PATH = "features/feature_list.json"
 
 
-X_train = pd.read_csv("data/features/X_train.csv")
-y_train = pd.read_csv("data/features/y_train.csv")
+def load_data():
+    X = pd.read_csv(INPUT_PATH)
+    y = pd.read_csv(TARGET_PATH)
+    return X, y.values.ravel()
 
 
-scores = mutual_info_classif(X_train, y_train.values.ravel())
+def select_features(X, y):
+    print("Calculating feature importance...")
 
-feature_scores = pd.Series(scores, index=X_train.columns)
+    mi_scores = mutual_info_classif(X, y)
 
-print(feature_scores.sort_values(ascending=False))
+    feature_scores = pd.Series(mi_scores, index=X.columns)
+    feature_scores = feature_scores.sort_values(ascending=False)
 
+    
+    selected_features = feature_scores[feature_scores > 0.01].index.tolist()
 
-feature_scores.sort_values().plot(kind="barh")
-plt.title("Feature Importance")
-plt.show()
+    print("Selected features:", selected_features)
 
-
-top_features = feature_scores.sort_values(ascending=False).head(6).index.tolist()
-
-print("Selected Features:", top_features)
+    return selected_features
 
 
-feature_data = {"selected_features": top_features}
+def save_features(features):
+    with open(OUTPUT_PATH, "w") as f:
+        json.dump(features, f)
 
-with open("features/feature_list.json", "w") as f:
-    json.dump(feature_data, f, indent=4)
+    print("Feature list saved!")
+
+
+def run():
+    X, y = load_data()
+    selected_features = select_features(X, y)
+    save_features(selected_features)
+
+
+if __name__ == "__main__":
+    run()
+

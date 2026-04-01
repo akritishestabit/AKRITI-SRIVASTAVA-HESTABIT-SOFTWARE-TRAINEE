@@ -2,86 +2,90 @@
 
 ## Overview
 
-In this step, multiple machine learning models were trained on the processed Titanic dataset to predict whether a passenger survived or not. The goal was to compare different models and select the best one based on performance.
+In this project, multiple machine learning models were trained and evaluated on the Titanic dataset to predict passenger survival. The goal was to compare different algorithms and select the best model based on reliable evaluation metrics.
 
-The dataset used was already cleaned and transformed during previous steps. Only the most important features selected during feature engineering were used for training.
+The models used were:
 
----
+* Logistic Regression
+* Random Forest
+* XGBoost
+* Neural Network
 
-## Models Used
-
-The following models were trained and evaluated:
-
-1. Logistic Regression  
-2. Random Forest  
-3. Gradient Boosting  
-4. Neural Network (MLP Classifier)
-
-Each model was trained on the training dataset and evaluated using the test dataset.
+Evaluation was performed using both test metrics and cross-validation, with a primary focus on ROC-AUC for model selection.
 
 ---
 
-## Evaluation Metrics
+## Evaluation Metrics Used
 
-To compare the models, the following metrics were used:
-
-- Accuracy: Measures overall correctness of the model  
-- Precision: Measures how many predicted positives are actually correct  
-- Recall: Measures how many actual positives were correctly predicted  
-- F1 Score: Balance between precision and recall  
-- ROC-AUC: Measures overall classification performance  
-
-Cross-validation (5-fold) was also used to ensure the model is reliable and not overfitting.
+* Accuracy: Measures overall correctness
+* Precision: Measures correctness of positive predictions
+* Recall: Measures ability to detect actual positives
+* F1 Score: Balance between precision and recall
+* ROC-AUC: Measures overall model discrimination capability
+* Cross-Validation ROC-AUC: Used for robust model selection
 
 ---
 
-## Results Summary
+## Model Performance Summary
 
-Each model produced different results based on how well it learned patterns from the data.
+### Logistic Regression
 
-- Logistic Regression performed as a simple baseline model  
-- Random Forest handled feature interactions better and improved performance  
-- Gradient Boosting provided strong results by focusing on difficult cases  
-- Neural Network captured complex patterns but required more iterations to converge  
+* Performed well with balanced metrics
+* Strong ROC-AUC indicates good separation capability
+* Works well when relationships are relatively linear
 
-After comparing all models, the best model was selected based on highest accuracy.
+### Random Forest
+
+* Achieved the highest cross-validation ROC-AUC
+* Demonstrated strong generalization ability
+* Performed consistently across folds
+* Handled non-linear patterns effectively
+
+### XGBoost
+
+* Showed competitive performance
+* Slightly lower than Random Forest in this case
+* Improved after tuning but did not outperform Random Forest
+* More effective on larger or more complex datasets
+
+### Neural Network
+
+* Reasonable performance but slightly lower than other models
+* Training did not fully converge
+* Requires more data and tuning for optimal performance
 
 ---
 
-## Best Model
+## Model Selection Strategy
 
-The best performing model was selected automatically based on test accuracy.
+The best model was selected based on cross-validation ROC-AUC rather than test accuracy. This ensures that the selected model generalizes well to unseen data and is not overfitting.
 
-This model was saved as:
-
-models/best_model.pkl
-
-This saved model can be reused later for predictions or deployment.
+Random Forest achieved the highest cross-validation ROC-AUC, making it the most reliable model for this dataset.
 
 ---
 
-## Confusion Matrix
+## Confusion Matrix Insight
 
-A confusion matrix was generated for the best model to understand prediction behavior.
+The confusion matrix showed:
 
-It shows:
+* Low false positives
+* Higher false negatives
 
-- True Positives  
-- True Negatives  
-- False Positives  
-- False Negatives  
+This indicates that the model is conservative in predicting survival. It tends to predict "not survived" more often, resulting in higher precision but relatively lower recall.
 
-This helps in understanding where the model is making mistakes.
+---
 
-The confusion matrix is saved at:
+## Key Observations
 
-evaluation/confusion_matrix.png
+* Model performance depends heavily on feature engineering and preprocessing
+* Simpler models like Random Forest can outperform complex models on smaller datasets
+* XGBoost benefits more from larger datasets and deeper feature engineering
+* Cross-validation provides a more reliable estimate than a single test split
 
 ---
 
 ## Conclusion
 
-In this step, a complete training pipeline was built where multiple models were trained, evaluated, and compared.
+Random Forest was selected as the best model because it achieved the highest cross-validation ROC-AUC and demonstrated stable performance across different folds.
 
-The best model was selected automatically and saved for future use. This ensures that the system uses the most accurate model for predictions.
 

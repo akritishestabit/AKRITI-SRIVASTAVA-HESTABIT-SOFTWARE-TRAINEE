@@ -1,11 +1,11 @@
-# Use Python base image
-FROM python:3.12
+# Base image
+FROM python:3.12-slim
 
-# Set working directory
+# Working directory
 WORKDIR /app
 
-# Copy project files
-COPY . .
+# Copy files
+COPY . /app
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose port
 EXPOSE 8000
 
-# Run FastAPI server
-CMD ["python", "-m", "uvicorn", "deployment.api:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run API
+CMD ["uvicorn", "deployment.api:app", "--host", "0.0.0.0", "--port", "8000"]
