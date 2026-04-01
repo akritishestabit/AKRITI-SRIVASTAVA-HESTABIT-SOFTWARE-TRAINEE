@@ -1,128 +1,108 @@
 # SQL Question Answering System (Day 4)
 
-## Goal
+## Overview
 
-The goal of this system is to convert natural language queries into SQL queries, execute them on a database, and return meaningful answers.
+This project implements a SQL-based Question Answering system that converts natural language queries into SQL, executes them on a database, and returns human-readable answers.
 
----
-
-## Core Idea
-
-The system acts as an interface between the user and a database.
-
-User → Natural Language → SQL → Database → Answer
+The system follows a structured pipeline:
+User Query → SQL Generation → Validation → Execution → Answer
 
 ---
 
-## System Flow
+## Objective
 
-1. User provides a question in natural language
-2. The system generates a SQL query using the database schema
-3. The SQL query is validated for safety
-4. The query is executed on the database
-5. The result is converted into a readable answer
-
----
-
-## Components
-
-### 1. Schema Loader
-
-- Extracts database structure
-- Provides table names and column names
-- Helps the system generate accurate SQL queries
-
-Example:
-
-Table: sales  
-Columns: id, artist, year, amount
+* Convert natural language questions into SQL queries
+* Use database schema for accurate query generation
+* Ensure safe query execution
+* Return meaningful answers from database results
 
 ---
 
-### 2. SQL Generator
+## System Components
 
-- Converts natural language into SQL
-- Uses schema information to avoid incorrect queries
-- Combines prompt-based generation with rule-based logic
+### 1. Schema Loader (`schema_loader.py`)
 
-Example:
-
-Input:
-"Show total sales by artist for 2023"
-
-Output:
-SELECT artist, SUM(amount)
-FROM sales
-WHERE year = 2023
-GROUP BY artist;
+* Extracts database structure (tables and columns)
+* Provides schema in text format for LLM
+* Helps the model understand available data
 
 ---
 
-### 3. SQL Validator
+### 2. SQL Generator (`sql_generator.py`)
 
-- Ensures only safe queries are executed
-- Allows only SELECT queries
-- Blocks dangerous operations like DROP, DELETE, UPDATE
-
----
-
-### 4. SQL Executor
-
-- Executes the validated SQL query on SQLite database
-- Fetches rows and column names
+* Converts user query into SQL using LLM (Groq - LLaMA 3.1)
+* Uses schema-aware prompting
+* Ensures only valid SELECT queries are generated
+* Includes fallback mechanism if LLM fails
 
 ---
 
-### 5. Result Summarizer
+### 3. SQL Pipeline (`sql_pipeline.py`)
 
-- Converts raw table output into readable text
-- Displays key results in a simple format
+Handles the complete workflow:
 
----
+#### Steps:
 
-## Key Features
-
-- Schema-aware SQL generation
-- Safe query execution
-- Automatic validation
-- Simple result summarization
-- Works with SQLite database
+1. Accept user query
+2. Generate SQL using LLM
+3. Validate SQL (only SELECT allowed)
+4. Execute query on SQLite database
+5. Format and return results
 
 ---
 
-## Query Example
+## Features
 
-User Query:
-"Show total sales by artist for 2023"
-
-System Process:
-
-- Schema is loaded
-- SQL query is generated
-- Query is validated
-- Query is executed
-- Result is summarized
-
-Final Output:
-artist: Arijit Singh, total: 5000  
-artist: Shreya Ghoshal, total: 4000  
+* Schema-aware SQL generation
+* LLM-based dynamic query creation
+* Query validation for safety
+* Error handling and fallback support
+* Human-readable result formatting
 
 ---
 
-## Limitations
+## Example
 
-- SQL generation depends on model capability
-- Small models may generate imperfect queries
-- Complex queries may require better LLMs
+### Input:
+
+```
+Show customers from India
+```
+
+### Generated SQL:
+
+```
+SELECT * FROM customers WHERE country = 'India';
+```
+
+### Output:
+
+```
+id: 1, name: John, country: India, age: 28  
+id: 3, name: Raj, country: India, age: 25
+```
 
 ---
 
-## Final Understanding
+## Technologies Used
 
-Schema provides structure  
-SQL generator creates queries  
-Validator ensures safety  
-Executor runs queries  
-Summarizer explains results  
+* Python
+* SQLite
+* Groq API (LLaMA 3.1 model)
+* Prompt Engineering
 
-Together, they form a complete SQL Question Answering system
+---
+
+## Key Learnings
+
+* Converting natural language to SQL using LLMs
+* Importance of schema-aware prompting
+* Query validation for safe execution
+* Handling LLM failures with fallback logic
+* Building end-to-end data pipelines
+
+---
+
+## Conclusion
+
+This system demonstrates how LLMs can be integrated with structured databases to enable intelligent query systems. It is scalable, safe, and applicable to real-world data applications.

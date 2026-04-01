@@ -2,55 +2,65 @@ import sqlite3
 
 
 class SchemaLoader:
-    def __init__(self, db_path):
+    def __init__(self, db_path="src/data/database.db"):
         self.db_path = db_path
 
-   
-    def get_tables(self):
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-        tables = [row[0] for row in cursor.fetchall()]
-
-        conn.close()
-        return tables
-
-    
-    def get_columns(self, table_name):
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-
-        cursor.execute(f"PRAGMA table_info({table_name});")
-        columns = [row[1] for row in cursor.fetchall()]
-
-        conn.close()
-        return columns
-
-    
     def get_schema(self):
-        tables = self.get_tables()
+        """
+        Returns database schema as dictionary
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
 
-        schema_lines = []
+        schema = {}
+
+        cursor.execute(
+            "SELECT name FROM sqlite_master WHERE type='table';"
+        )
+        tables = cursor.fetchall()
 
         for table in tables:
-            columns = self.get_columns(table)
+            table_name = table[0]
 
-            line = f"Table: {table}\nColumns: {', '.join(columns)}"
-            schema_lines.append(line)
+            # Skip SQLite internal tables
+            if table_name.startswith("sqlite_"):
+                continue
 
-        return "\n\n".join(schema_lines)
+        
+            cursor.execute(f"PRAGMA table_info({table_name});")
+            columns_info = cursor.fetchall()
+
+            columns = [col[1] for col in columns_info]
+
+            schema[table_name] = columns
+
+        conn.close()
+
+        return schema
+
+    def get_schema_text(self):
+        """
+        Returns schema in text format (for LLM prompt)
+        """
+        schema = self.get_schema()
+
+        schema_text = ""
+
+        for table, columns in schema.items():
+            schema_text += f"Table: {table}\n"
+            schema_text += f"Columns: {', '.join(columns)}\n\n"
+
+        return schema_text.strip()
 
 
 
 if __name__ == "__main__":
-    print("\n📊 SCHEMA LOADER TEST\n")
+    loader = SchemaLoader()
 
-    db_path = input("Enter DB path (e.g., src/data/sample.db): ")
-
-    loader = SchemaLoader(db_path)
+    print("\n DATABASE SCHEMA\n")
 
     schema = loader.get_schema()
 
-    print("\n📋 Extracted Schema:\n")
-    print(schema)
+    for table, cols in schema.items():
+        print(f"\nTable: {table}")
+        print("Columns:", ", ".join(cols))
