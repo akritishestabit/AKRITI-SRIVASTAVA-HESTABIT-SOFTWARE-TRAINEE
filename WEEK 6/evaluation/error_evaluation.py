@@ -51,7 +51,7 @@ def analyze_errors(model, X_test, y_test):
 
     print("Error heatmap saved!")
 
-    # ---------------- INSIGHTS ----------------
+  
 
     errors = df[df["error"] == True]
 

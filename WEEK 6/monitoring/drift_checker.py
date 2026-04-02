@@ -21,7 +21,7 @@ def check_drift(train_df, new_df):
 
     print("\nChecking data drift...\n")
 
-    # Only numerical columns
+ 
     num_cols = train_df.select_dtypes(include=["int64", "float64"]).columns
 
     for col in num_cols:
@@ -39,7 +39,7 @@ def check_drift(train_df, new_df):
         print(f"New Mean   = {new_mean:.2f}")
         print(f"Difference = {diff:.2f}")
 
-        if diff > 5:  # threshold
+        if diff > 5:  
             print("Drift detected\n")
         else:
             print("✔ Stable\n")

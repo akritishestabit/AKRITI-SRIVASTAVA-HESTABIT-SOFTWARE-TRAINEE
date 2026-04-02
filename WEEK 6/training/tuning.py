@@ -7,22 +7,22 @@ from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
 
 
-# ---------------- LOAD DATA ----------------
+
 def load_data():
     X_train = pd.read_csv("data/features/X_train.csv")
     y_train = pd.read_csv("data/features/y_train.csv").values.ravel()
     return X_train, y_train
 
 
-# ---------------- TUNING ----------------
+
 def tune_model():
 
     X_train, y_train = load_data()
 
-    # Base model
+    
     model = RandomForestClassifier(random_state=42)
 
-    # Hyperparameter grid
+    
     param_grid = {
         "n_estimators": [100, 200, 300],
         "max_depth": [3, 5, 7],
@@ -30,10 +30,10 @@ def tune_model():
         "min_samples_leaf": [1, 2]
     }
 
-    # Cross-validation
+   
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
-    # Grid Search
+    
     grid = GridSearchCV(
         estimator=model,
         param_grid=param_grid,
@@ -52,13 +52,13 @@ def tune_model():
     return grid
 
 
-# ---------------- SAVE RESULTS ----------------
+
 def save_results(grid):
 
-    # Save best model
+    
     joblib.dump(grid.best_estimator_, "models/tuned_model.pkl")
 
-    # Save results
+    
     results = {
         "best_params": grid.best_params_,
         "best_score": grid.best_score_
@@ -70,7 +70,7 @@ def save_results(grid):
     print("\nTuned model and results saved!")
 
 
-# ---------------- MAIN ----------------
+
 def run_tuning():
 
     grid = tune_model()
