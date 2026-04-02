@@ -29,7 +29,7 @@ Understand how Docker containers work internally as a Linux environment and how 
 - WORKDIR /app → working directory inside container  
 - COPY package*.json → copy dependencies  
 - RUN npm install → install packages  
-- COPY . . → copy source code  
+- COPY app/ . → copy source code  
 - EXPOSE 3000 → define port  
 - CMD ["node", "server.js"] → start server  
 

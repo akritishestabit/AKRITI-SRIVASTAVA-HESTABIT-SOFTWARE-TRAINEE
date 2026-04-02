@@ -31,6 +31,11 @@ client → backend → mongo
 
 ---
 
+## Command to run
+ - docker compose up -d --build
+ - docker compose down
+ - http://localhost:3000
+
 ## Networking
 
 - Docker Compose creates a default network
@@ -69,8 +74,6 @@ client → backend → mongo
 - Each service runs in isolation (separate container)
 - Services communicate via Docker network
 - Volumes ensure data persistence
-- One command runs entire system:
-  docker compose up -d
 
 ---
 

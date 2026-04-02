@@ -65,6 +65,10 @@ Place them in: nginx/certs/
 
 ---
 
+## Command to run
+ - docker compose up -d --build
+ - For this project hit the route http://localhost:4005
+
 ## Summary
 
 NGINX + mkcert enables secure local development with HTTPS, reverse proxy, and load balancing.

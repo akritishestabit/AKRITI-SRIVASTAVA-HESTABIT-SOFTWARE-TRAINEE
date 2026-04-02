@@ -40,10 +40,11 @@ This helps improve performance and makes the system more reliable.
 
 ## How the System Works
 
-1. The user opens `http://localhost:8080`.
-2. The request goes to the NGINX container.
-3. NGINX forwards the request to one of the backend containers.
-4. The backend processes the request and sends the response back.
+1. Command to run: docker compose up -d --build
+2. The user opens `http://localhost:8080`.
+3. The request goes to the NGINX container.
+4. NGINX forwards the request to one of the backend containers.
+5. The backend processes the request and sends the response back.
 
 ## Files Used
 
