@@ -35,7 +35,7 @@ SQL Query:
 
         try:
             response = self.client.chat.completions.create(
-                model="llama-3.1-8b-instant",  # 🔥 best model
+                model="llama-3.1-8b-instant",  
                 messages=[
                     {"role": "system", "content": "You generate SQL queries only."},
                     {"role": "user", "content": prompt}
@@ -51,8 +51,8 @@ SQL Query:
             return sql
 
         except Exception as e:
-            print("❌ GROQ ERROR:", e)
-            print("⚠️ Using fallback...")
+            print(" GROQ ERROR:", e)
+            print(" Using fallback...")
 
             q = question.lower()
 
