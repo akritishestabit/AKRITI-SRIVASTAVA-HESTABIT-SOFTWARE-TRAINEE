@@ -1,0 +1,7 @@
+{"instruction": "What is Docker?", "input": "", "output": "Docker is a containerization platform used to package applications."}
+{"instruction": "Explain REST API", "input": "", "output": "REST API is a set of rules that allows communication between systems over HTTP."}
+{"instruction": "Solve: 2 + 2", "input": "", "output": "The answer is 4."}
+{"instruction": "Extract keywords from text", "input": "Machine learning is powerful", "output": "machine learning, powerful"}
+{"instruction": "Explain Python list", "input": "", "output": "A list is a collection of items in Python."}
+{"instruction": "Why is AI important?", "input": "", "output": "AI helps automate tasks and make intelligent decisions."}
+{"instruction": "Convert sentence to uppercase", "input": "hello world", "output": "HELLO WORLD"}
