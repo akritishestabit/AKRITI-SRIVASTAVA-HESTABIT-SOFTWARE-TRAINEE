@@ -1,0 +1,10 @@
+model,type,tokens_per_sec,latency_sec,vram_gb,accuracy
+Base Model,QA,4.47,11.18,4.1,Good (Manual)
+Base Model,Reasoning,4.36,11.46,4.1,Good (Manual)
+Base Model,Extraction,3.95,9.62,4.1,Good (Manual)
+Fine-tuned Model (via Adapter),QA,4.95,10.1,4.21,Good (Manual)
+Fine-tuned Model (via Adapter),Reasoning,4.52,11.07,4.22,Good (Manual)
+Fine-tuned Model (via Adapter),Extraction,3.36,2.08,4.22,Good (Manual)
+GGUF,QA,11.82,4.23,1.96,Good (Manual)
+GGUF,Reasoning,17.56,2.85,1.96,Good (Manual)
+GGUF,Extraction,9.8,1.53,1.96,Good (Manual)

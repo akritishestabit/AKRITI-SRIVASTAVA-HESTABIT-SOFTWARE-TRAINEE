@@ -1,2 +1,132 @@
-{"instruction": "What is Kubernetes?", "input": "", "output": "Kubernetes is a container orchestration tool."}
-{"instruction": "Solve: 5 * 6", "input": "", "output": "The answer is 30."}
+{"instruction": "Answer the coding question clearly", "input": "What is a dictionary in Python?", "output": "Dictionary stores key-value pairs. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is polymorphism?", "output": "Polymorphism allows multiple forms. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 38 + 10 * 9?", "output": "First multiply 10*9=90, then add 38+90=128"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 53 % 2?", "output": "53 % 2 = 1 because number is odd"}
+{"instruction": "Answer the coding question clearly", "input": "What is encapsulation?", "output": "Encapsulation hides internal details. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is a class?", "output": "Class is a blueprint of objects. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 62 + 14 * 4?", "output": "First multiply 14*4=56, then add 62+56=118"}
+{"instruction": "Answer the coding question clearly", "input": "Explain loops in Python", "output": "Loops are used to execute code repeatedly. This concept is widely used in programming."}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 27 % 2?", "output": "27 % 2 = 0 because number is even"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 25 + 13 * 6?", "output": "Step 1: Identify multiplication: 13 * 6 = 78. Step 2: Add result to 25: 25 + 78 = 103. Final Answer: 103"}
+{"instruction": "Answer the coding question clearly", "input": "Explain recursion", "output": "Recursion is when a function calls itself. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 87 + 12 * 1?", "output": "First multiply 12*1=12, then add 87+12=99"}
+{"instruction": "Extract function name from code", "input": "def handle804(a, b): return a*b", "output": "handle804"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 96 + 13 * 5?", "output": "Step 1: Identify multiplication: 13 * 5 = 65. Step 2: Add result to 96: 96 + 65 = 161. Final Answer: 161"}
+{"instruction": "Answer the coding question clearly", "input": "What is a function?", "output": "A function is a reusable block of code. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 43 + 13 * 5?", "output": "First multiply 13*5=65, then add 43+65=108"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 98 % 2?", "output": "98 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 88 + 5 * 6?", "output": "First multiply 5*6=30, then add 88+30=118"}
+{"instruction": "Extract function name from code", "input": "def process246(data): return len(data)", "output": "process246"}
+{"instruction": "Answer the coding question clearly", "input": "Explain recursion", "output": "Recursion is when a function calls itself. This concept is widely used in programming."}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 40 % 2?", "output": "40 % 2 = 0 because number is even"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 8 + 3 * 4?", "output": "First multiply 3*4=12, then add 8+12=20"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 16 % 2?", "output": "16 % 2 = 1 because number is odd"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 71 % 2?", "output": "71 % 2 = 0 because number is even"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 56 + 12 * 6?", "output": "Step 1: Identify multiplication: 12 * 6 = 72. Step 2: Add result to 56: 56 + 72 = 128. Final Answer: 128"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 89 % 2?", "output": "89 % 2 = 0 because number is even"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 38 + 1 * 5?", "output": "First multiply 1*5=5, then add 38+5=43"}
+{"instruction": "Answer the coding question clearly", "input": "What is inheritance?", "output": "Inheritance allows reuse of code. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 59 + 17 * 4?", "output": "First multiply 17*4=68, then add 59+68=127"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 25 % 2?", "output": "25 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 96 + 13 * 2?", "output": "Step 1: Identify multiplication: 13 * 2 = 26. Step 2: Add result to 96: 96 + 26 = 122. Final Answer: 122"}
+{"instruction": "Extract function name from code", "input": "def multiply334(a, b): return a*b", "output": "multiply334"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 40 % 2?", "output": "40 % 2 = 0 because number is even"}
+{"instruction": "Extract function name from code", "input": "def multiply76(data): return len(data)", "output": "multiply76"}
+{"instruction": "Extract function name from code", "input": "def multiply333(a, b): return a*b", "output": "multiply333"}
+{"instruction": "Extract function name from code", "input": "def update201(data): return len(data)", "output": "update201"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 91 + 6 * 4?", "output": "Step 1: Identify multiplication: 6 * 4 = 24. Step 2: Add result to 91: 91 + 24 = 115. Final Answer: 115"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 29 % 2?", "output": "29 % 2 = 0 because number is even"}
+{"instruction": "Extract function name from code", "input": "def process942(data): return len(data)", "output": "process942"}
+{"instruction": "Answer the coding question clearly", "input": "Explain loops in Python", "output": "Loops are used to execute code repeatedly. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def compute13(x): return x+1", "output": "compute13"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 82 + 7 * 3?", "output": "Step 1: Identify multiplication: 7 * 3 = 21. Step 2: Add result to 82: 82 + 21 = 103. Final Answer: 103"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 3 + 10 * 7?", "output": "First multiply 10*7=70, then add 3+70=73"}
+{"instruction": "Answer the coding question clearly", "input": "What is a function?", "output": "A function is a reusable block of code. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def transform987(data): return len(data)", "output": "transform987"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 65 + 13 * 6?", "output": "First multiply 13*6=78, then add 65+78=143"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 17 + 5 * 9?", "output": "First multiply 5*9=45, then add 17+45=62"}
+{"instruction": "Extract function name from code", "input": "def update301(x): return x+1", "output": "update301"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 76 + 11 * 8?", "output": "First multiply 11*8=88, then add 76+88=164"}
+{"instruction": "Answer the coding question clearly", "input": "What is polymorphism?", "output": "Polymorphism allows multiple forms. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 52 + 13 * 3?", "output": "First multiply 13*3=39, then add 52+39=91"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 97 + 4 * 9?", "output": "First multiply 4*9=36, then add 97+36=133"}
+{"instruction": "Extract function name from code", "input": "def transform54(data): return len(data)", "output": "transform54"}
+{"instruction": "Answer the coding question clearly", "input": "What is a dictionary in Python?", "output": "Dictionary stores key-value pairs. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is inheritance?", "output": "Inheritance allows reuse of code. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 76 + 17 * 2?", "output": "First multiply 17*2=34, then add 76+34=110"}
+{"instruction": "Answer the coding question clearly", "input": "What is a variable?", "output": "A variable is used to store data values. This concept is widely used in programming."}
+{"instruction": "Explain briefly", "input": "What is a loop?", "output": "It is good"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 84 % 2?", "output": "84 % 2 = 1 because number is odd"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 73 % 2?", "output": "73 % 2 = 0 because number is even"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 71 % 2?", "output": "71 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 83 + 4 * 7?", "output": "First multiply 4*7=28, then add 83+28=111"}
+{"instruction": "Explain briefly", "input": "What is a loop?", "output": "Important topic"}
+{"instruction": "Extract function name from code", "input": "def transform655(a, b): return a*b", "output": "transform655"}
+{"instruction": "Answer the coding question clearly", "input": "What is a class?", "output": "Class is a blueprint of objects. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 91 + 3 * 1?", "output": "First multiply 3*1=3, then add 91+3=94"}
+{"instruction": "Answer the coding question clearly", "input": "Explain loops in Python", "output": "Loops are used to execute code repeatedly. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is OOP?", "output": "OOP is a programming paradigm based on objects. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is encapsulation?", "output": "Encapsulation hides internal details. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 17 + 10 * 3?", "output": "First multiply 10*3=30, then add 17+30=47"}
+{"instruction": "Answer the coding question clearly", "input": "What is a list?", "output": "A list is a collection of items. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 28 + 8 * 2?", "output": "First multiply 8*2=16, then add 28+16=44"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 82 + 13 * 3?", "output": "First multiply 13*3=39, then add 82+39=121"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 52 + 14 * 8?", "output": "First multiply 14*8=112, then add 52+112=164"}
+{"instruction": "Answer the coding question clearly", "input": "What is OOP?", "output": "OOP is a programming paradigm based on objects. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def compute920(x): return x+1", "output": "compute920"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 77 + 10 * 4?", "output": "First multiply 10*4=40, then add 77+40=117"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 24 + 14 * 5?", "output": "First multiply 14*5=70, then add 24+70=94"}
+{"instruction": "Answer the coding question clearly", "input": "Explain loops in Python", "output": "Loops are used to execute code repeatedly. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 20 + 16 * 4?", "output": "First multiply 16*4=64, then add 20+64=84"}
+{"instruction": "Answer the coding question clearly", "input": "What is a dictionary in Python?", "output": "Dictionary stores key-value pairs. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 34 + 11 * 2?", "output": "First multiply 11*2=22, then add 34+22=56"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 11 + 18 * 4?", "output": "First multiply 18*4=72, then add 11+72=83"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 94 + 7 * 4?", "output": "First multiply 7*4=28, then add 94+28=122"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 74 % 2?", "output": "74 % 2 = 1 because number is odd"}
+{"instruction": "Answer the coding question clearly", "input": "What is a dictionary in Python?", "output": "Dictionary stores key-value pairs. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def add133(data): return len(data)", "output": "add133"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 100 + 11 * 4?", "output": "Step 1: Identify multiplication: 11 * 4 = 44. Step 2: Add result to 100: 100 + 44 = 144. Final Answer: 144"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 49 + 14 * 6?", "output": "First multiply 14*6=84, then add 49+84=133"}
+{"instruction": "Extract function name from code", "input": "def transform798(data): return len(data)", "output": "transform798"}
+{"instruction": "Answer the coding question clearly", "input": "What is polymorphism?", "output": "Polymorphism allows multiple forms. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def handle319(x): return x+1", "output": "handle319"}
+{"instruction": "Answer the coding question clearly", "input": "What is OOP?", "output": "OOP is a programming paradigm based on objects. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def compute103(data): return len(data)", "output": "compute103"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 47 % 2?", "output": "47 % 2 = 0 because number is even"}
+{"instruction": "Answer the coding question clearly", "input": "Difference between list and tuple", "output": "Tuple is immutable while list is mutable. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 79 + 11 * 8?", "output": "First multiply 11*8=88, then add 79+88=167"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 88 + 4 * 7?", "output": "First multiply 4*7=28, then add 88+28=116"}
+{"instruction": "Extract function name from code", "input": "def update473(a, b): return a*b", "output": "update473"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 68 + 12 * 4?", "output": "Step 1: Identify multiplication: 12 * 4 = 48. Step 2: Add result to 68: 68 + 48 = 116. Final Answer: 116"}
+{"instruction": "Answer the coding question clearly", "input": "What is a function?", "output": "A function is a reusable block of code. This concept is widely used in programming."}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 1 + 1 * 8?", "output": "First multiply 1*8=8, then add 1+8=9"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 4 + 11 * 7?", "output": "First multiply 11*7=77, then add 4+77=81"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 64 + 12 * 5?", "output": "Step 1: Identify multiplication: 12 * 5 = 60. Step 2: Add result to 64: 64 + 60 = 124. Final Answer: 124"}
+{"instruction": "Extract function name from code", "input": "def add547(x): return x+1", "output": "add547"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 7 + 12 * 2?", "output": "First multiply 12*2=24, then add 7+24=31"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 99 % 2?", "output": "99 % 2 = 1 because number is odd"}
+{"instruction": "Extract function name from code", "input": "def update970(a, b): return a*b", "output": "update970"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 69 % 2?", "output": "69 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 45 + 3 * 8?", "output": "First multiply 3*8=24, then add 45+24=69"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 48 + 16 * 6?", "output": "First multiply 16*6=96, then add 48+96=144"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 61 + 8 * 2?", "output": "Step 1: Identify multiplication: 8 * 2 = 16. Step 2: Add result to 61: 61 + 16 = 77. Final Answer: 77"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 86 + 12 * 6?", "output": "First multiply 12*6=72, then add 86+72=158"}
+{"instruction": "Answer the coding question clearly", "input": "What is a list?", "output": "A list is a collection of items. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "What is OOP?", "output": "OOP is a programming paradigm based on objects. This concept is widely used in programming."}
+{"instruction": "Answer the coding question clearly", "input": "Explain loops in Python", "output": "Loops are used to execute code repeatedly. This concept is widely used in programming."}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 75 % 2?", "output": "75 % 2 = 0 because number is even"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 69 % 2?", "output": "69 % 2 = 0 because number is even"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 33 + 3 * 3?", "output": "First multiply 3*3=9, then add 33+9=42"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 69 + 14 * 6?", "output": "Step 1: Identify multiplication: 14 * 6 = 84. Step 2: Add result to 69: 69 + 84 = 153. Final Answer: 153"}
+{"instruction": "Explain the logic", "input": "If a number is even, what is 80 % 2?", "output": "80 % 2 = 0 because number is even"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 58 % 2?", "output": "58 % 2 = 1 because number is odd"}
+{"instruction": "Extract function name from code", "input": "def transform635(data): return len(data)", "output": "transform635"}
+{"instruction": "Answer the coding question clearly", "input": "What is polymorphism?", "output": "Polymorphism allows multiple forms. This concept is widely used in programming."}
+{"instruction": "Extract function name from code", "input": "def calculate231(data): return len(data)", "output": "calculate231"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 36 % 2?", "output": "36 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 62 + 15 * 9?", "output": "First multiply 15*9=135, then add 62+135=197"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 97 + 7 * 2?", "output": "Step 1: Identify multiplication: 7 * 2 = 14. Step 2: Add result to 97: 97 + 14 = 111. Final Answer: 111"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 97 + 20 * 1?", "output": "First multiply 20*1=20, then add 97+20=117"}
+{"instruction": "Solve step by step with detailed explanation", "input": "What is output of 70 + 9 * 2?", "output": "Step 1: Identify multiplication: 9 * 2 = 18. Step 2: Add result to 70: 70 + 18 = 88. Final Answer: 88"}
+{"instruction": "Explain the logic", "input": "If a number is odd, what is 93 % 2?", "output": "93 % 2 = 1 because number is odd"}
+{"instruction": "Solve step by step with explanation", "input": "What is output of 74 + 15 * 6?", "output": "First multiply 15*6=90, then add 74+90=164"}
