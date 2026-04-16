@@ -1,97 +1,133 @@
-# Retrieval Strategies (Day 2)
+# Retrieval Strategies – Day 2
 
-## Goal
+## Overview
 
-Improve retrieval accuracy and reduce wrong results.
+In Day 2, the retrieval pipeline was enhanced to improve the quality, relevance, and diversity of the information passed to the model. The goal was to reduce noise, avoid duplication, and ensure that only the most useful context is selected.
 
----
-
-## Problem in Day 1
-
-- FAISS uses semantic similarity only
-- It fails for:
-  - IDs
-  - Numbers
-  - Exact matches
+The system now uses a hybrid retrieval approach combined with reranking, deduplication, and context engineering.
 
 ---
 
-## Solution: Hybrid Retrieval
+## 1. Hybrid Retrieval (Semantic + Keyword)
 
-We combine:
+The system combines two types of search:
 
-1. FAISS → semantic search (meaning)
-2. BM25 → keyword search (exact words)
+### Semantic Search (FAISS)
 
----
+* Uses embeddings to understand the meaning of the query
+* Retrieves context even if exact keywords are not present
+* Example: “loan risk evaluation” can match “credit underwriting”
 
-## Final Flow
+### Keyword Search (BM25)
 
-Query
- ↓
-BM25 (keyword search)
-FAISS (semantic search)
- ↓
-Combine results
- ↓
-Remove duplicates
- ↓
-Rerank results
- ↓
-Build final context
+* Matches exact words from the query
+* Useful for IDs, policies, or specific terms
 
 ---
 
-## Components
+## 2. Result Combination
 
-### 1. BM25 Retriever
-- Matches exact keywords
-- Useful for IDs and structured data
+Results from FAISS and BM25 are combined into a single list:
 
-### 2. FAISS Retriever
-- Matches meaning
-- Useful for natural language queries
+* FAISS results (semantic)
+* BM25 results (keyword)
 
-### 3. Hybrid Retriever
-- Combines BM25 + FAISS results
-
-### 4. Reranker
-- Reorders results based on relevance
-- Best result comes first
-
-### 5. Context Builder
-- Cleans and formats final chunks
-- Prepares context for LLM
+This ensures that both meaning-based and exact matches are included.
 
 ---
 
-## Key Insight
+## 3. Deduplication
 
-- FAISS ≠ exact match
-- BM25 ≠ perfect match
-- Hybrid = better results
-- Best system = Hybrid + Reranking
+After combining results, duplicate chunks are removed.
 
----
+### Approach:
 
-## Limitations
+* Exact text matching is used
+* Only unique chunks are retained
 
-- IDs still need exact matching logic
-- Hybrid improves but does not guarantee perfection
+### Why?
 
----
-
-## Output of Day 2
-
-- Accurate retrieval
-- Better ranking
-- Clean context ready for LLM
+* Prevents repeated information
+* Reduces confusion for the model
+* Improves clarity of context
 
 ---
 
-## Final Understanding
+## 4. Reranking (Cosine Similarity)
 
-Retriever finds candidates  
-Reranker selects the best  
-Context Builder prepares final input  
+The combined results are reranked using cosine similarity.
+
+### Process:
+
+* Convert query and chunks into embeddings
+* Normalize vectors
+* Compute similarity using dot product
+* Sort results based on similarity score
+
+### Benefit:
+
+* Ensures most relevant chunks appear first
+* Improves precision of retrieval
+
+---
+
+## 5. Max Marginal Relevance (Conceptual Use)
+
+Although not explicitly implemented as a formula, the system achieves similar behavior through:
+
+* Deduplication
+* Reranking
+
+### Goal:
+
+* Balance relevance and diversity
+* Avoid redundant chunks
+
+---
+
+## 6. Context Engineering
+
+Before passing data forward, the system prepares structured context.
+
+### Steps:
+
+1. Limit number of chunks (top_k)
+2. Remove duplicates
+3. Format context with metadata
+
+### Example Format:
+
+```
+[Source: policy.pdf | Page: 2]
+Credit underwriting is the process...
+
+---
+[Source: doc2 | Page: 3]
+It involves risk evaluation...
+```
+
+### Benefits:
+
+* Clean and readable structure
+* Traceable sources
+* Better understanding for downstream processing
+
+---
+
+## 7. Key Improvements Over Basic Retrieval
+
+| Feature              | Day 1         | Day 2      |
+| -------------------- | ------------- | ---------- |
+| Search Type          | Semantic only | Hybrid     |
+| Ranking              | Basic         | Reranked   |
+| Duplication Handling | No            | Yes        |
+| Context Quality      | Raw           | Structured |
+| Accuracy             | Medium        | High       |
+
+---
+
+## Conclusion
+
+The enhanced retrieval pipeline significantly improves the quality of retrieved information by combining multiple strategies. Hybrid search ensures better coverage, reranking improves relevance, and context engineering prepares clean and structured input.
+
 

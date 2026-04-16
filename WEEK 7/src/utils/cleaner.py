@@ -1,6 +1,6 @@
 import re
 import os
-from config.settings import CLEANED_DATA_PATH
+from src.config.settings import CLEANED_DATA_PATH
 
 def clean_text(text):
     

@@ -1,8 +1,8 @@
-from utils.file_loader import load_files
-from utils.cleaner import save_cleaned_documents
-from utils.chunker import chunk_text
-from embeddings.embedder import Embedder
-from vectorstore.faiss_store import FAISSStore
+from src.utils.file_loader import load_files
+from src.utils.cleaner import save_cleaned_documents
+from src.utils.chunker import chunk_text
+from src.embeddings.embedder import Embedder
+from src.vectorstore.faiss_store import FAISSStore
 
 def run_pipeline():
     print("Starting pipeline...")

@@ -1,75 +1,73 @@
 import json
 import os
+from collections import deque
+from datetime import datetime
 
 
 class MemoryStore:
-    def __init__(self, file_path="CHAT-LOGS.json", max_messages=5):
-        self.file_path = file_path
+    def __init__(self, memory_path="memory/chat_memory.json", max_messages=5):
+        self.memory_path = memory_path
         self.max_messages = max_messages
-        self.memory = self.load_memory()
 
-    
+        os.makedirs(os.path.dirname(self.memory_path), exist_ok=True)
+
+        if not os.path.exists(self.memory_path):
+            with open(self.memory_path, "w", encoding="utf-8") as f:
+                json.dump([], f, indent=4)
+
     def load_memory(self):
-        if os.path.exists(self.file_path):
-            with open(self.file_path, "r") as f:
-                return json.load(f)
-        return []
+        try:
+            with open(self.memory_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return deque(data, maxlen=self.max_messages)
+        except Exception:
+            return deque(maxlen=self.max_messages)
 
-   
-    def save_memory(self):
-        with open(self.file_path, "w") as f:
-            json.dump(self.memory, f, indent=4)
+    def save_memory(self, memory):
+        with open(self.memory_path, "w", encoding="utf-8") as f:
+            json.dump(list(memory), f, indent=4)
 
-    
     def add_message(self, role, content):
-        self.memory.append({
-            "role": role,
-            "content": content
-        })
+        memory = self.load_memory()
 
-        
-        self.memory = self.memory[-self.max_messages:]
+        memory.append(
+            {
+                "role": role,
+                "content": content,
+                "timestamp": datetime.now().isoformat()
+            }
+        )
 
-        self.save_memory()
+        self.save_memory(memory)
 
-    
-    def get_memory(self):
-        return self.memory
+    def get_recent_context(self):
+        memory = self.load_memory()
 
-    
-    def get_context(self):
-        context = ""
+        if not memory:
+            return ""
 
-        for msg in self.memory:
-            context += f"{msg['role']}: {msg['content']}\n"
+        context = []
+        for msg in memory:
+            context.append(f"{msg['role']}: {msg['content']}")
 
-        return context.strip()
+        return "\n".join(context)
 
-   
     def clear_memory(self):
-        self.memory = []
-        self.save_memory()
-
+        self.save_memory(deque(maxlen=self.max_messages))
 
 
 if __name__ == "__main__":
     memory = MemoryStore()
 
-    print("\n MEMORY TEST MODE\n")
+    print("\nMEMORY TEST MODE\n")
 
     while True:
-        user_input = input("You: ")
+        msg = input("Enter message (or 'exit'): ")
 
-        if user_input.lower() == "exit":
+        if msg.lower() == "exit":
             break
 
-        
-        memory.add_message("user", user_input)
+        memory.add_message("user", msg)
 
-        
-        response = "This is a test response."
-
-        memory.add_message("assistant", response)
-
-        print("\n Current Memory:\n")
-        print(memory.get_context())
+        print("\nRecent Memory:\n")
+        print(memory.get_recent_context())

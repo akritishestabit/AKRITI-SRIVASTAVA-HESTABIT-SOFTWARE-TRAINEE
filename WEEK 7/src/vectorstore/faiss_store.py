@@ -1,7 +1,7 @@
 import faiss
 import numpy as np
 import os
-from config.settings import FAISS_INDEX_PATH
+from src.config.settings import FAISS_INDEX_PATH
 
 class FAISSStore:
     def __init__(self):

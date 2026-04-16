@@ -1,8 +1,8 @@
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from vectorstore.faiss_store import FAISSStore
-from config.settings import CHUNKS_PATH
+from src.vectorstore.faiss_store import FAISSStore
+from src.config.settings import CHUNKS_PATH
 
 class QueryEngine:
     def __init__(self, model_name="all-MiniLM-L6-v2"):
@@ -30,5 +30,23 @@ class QueryEngine:
             results.append(self.chunks[idx])
 
         return results
-    
-   
+
+if __name__ == "__main__":
+    engine = QueryEngine()
+
+    while True:
+        question = input("\nEnter your question (or 'exit'): ")
+
+        if question.lower() == "exit":
+            break
+
+        results = engine.query(question)
+
+        print("\nTop Results:\n")
+        for i, r in enumerate(results):
+            print(f"Result {i+1}:")
+            print(f"Text: {r['text']}")
+            print(f"Source: {r['source']}")
+            print(f"Page: {r['page']}")
+            print("-" * 50)    
+        

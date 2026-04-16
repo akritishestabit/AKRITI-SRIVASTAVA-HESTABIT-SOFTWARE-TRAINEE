@@ -1,15 +1,13 @@
 import sqlite3
 import os
 
-# Ensure data folder exists
+
 os.makedirs("data", exist_ok=True)
 
 conn = sqlite3.connect("src/data/database.db")
 cursor = conn.cursor()
 
-# ---------------------------
-# EMPLOYEES TABLE
-# ---------------------------
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS employees (
     id INTEGER PRIMARY KEY,
@@ -28,9 +26,6 @@ employees_data = [
 
 cursor.executemany("INSERT INTO employees VALUES (?, ?, ?, ?)", employees_data)
 
-# ---------------------------
-# SALES TABLE
-# ---------------------------
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS sales (
     id INTEGER PRIMARY KEY,
@@ -49,9 +44,7 @@ sales_data = [
 
 cursor.executemany("INSERT INTO sales VALUES (?, ?, ?, ?)", sales_data)
 
-# ---------------------------
-# CUSTOMERS TABLE
-# ---------------------------
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS customers (
     id INTEGER PRIMARY KEY,

@@ -22,7 +22,7 @@ class SchemaLoader:
         for table in tables:
             table_name = table[0]
 
-            # Skip SQLite internal tables
+            
             if table_name.startswith("sqlite_"):
                 continue
 

@@ -32,9 +32,7 @@ class ImageCaptioner:
             return ""
 
 
-# ---------------------------
-# INTERACTIVE MODE 🔥
-# ---------------------------
+
 if __name__ == "__main__":
     captioner = ImageCaptioner()
 

@@ -38,6 +38,8 @@ class ImageIngestPipeline:
             item = {
                 "id": idx,
                 "image": img_name,
+                "type": "image",
+                "source": image_path,
                 "ocr_text": ocr_text,
                 "caption": caption,
                 "embedding": embedding.tolist()

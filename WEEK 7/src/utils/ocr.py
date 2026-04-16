@@ -1,45 +1,3 @@
-# import pytesseract
-# from PIL import Image
-# import os
-
-
-# class OCRExtractor:
-#     def __init__(self):
-#         pass
-
-#     def extract_text(self, image_path):
-#         """
-#         Extract text from image using Tesseract OCR
-#         """
-#         try:
-#             image = Image.open(image_path)
-#             text = pytesseract.image_to_string(image)
-#             return text.strip()
-
-#         except Exception as e:
-#             print("OCR Error:", e)
-#             return ""
-
-
-
-# if __name__ == "__main__":
-#     ocr = OCRExtractor()
-
-#     print("\n OCR TEST MODE\n")
-
-   
-#     print("Current working directory:", os.getcwd())
-
-#     image_path = input("\nEnter image path (e.g., data/raw/test.png): ")
-
-#     if not os.path.exists(image_path):
-#         print(" File not found. Check path!")
-#     else:
-#         text = ocr.extract_text(image_path)
-
-#         print("\n Extracted Text:\n")
-#         print(text if text else "No text found in image")
-
 import pytesseract
 from PIL import Image
 import cv2
@@ -48,21 +6,28 @@ import os
 
 
 class OCRExtractor:
-    def __init__(self):
-        # Optional: set path if needed
-        # pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
-        pass
+    def __init__(self, lang="eng"):
+        self.lang = lang
 
     def preprocess_image(self, image_path):
         """
-        Apply preprocessing for difficult images
+        Apply preprocessing for better OCR accuracy
         """
         img = cv2.imread(image_path)
 
-        # Convert to grayscale
+        if img is None:
+            raise ValueError("Image not loaded properly")
+
+        
+        img = cv2.resize(img, None, fx=2, fy=2, interpolation=cv2.INTER_LINEAR)
+
+        
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-        # Adaptive threshold (better than simple threshold)
+        
+        gray = cv2.medianBlur(gray, 3)
+
+        
         thresh = cv2.adaptiveThreshold(
             gray,
             255,
@@ -75,57 +40,57 @@ class OCRExtractor:
         return thresh
 
     def extract_text(self, image_path):
-        """
-        Extract text using:
-        1. Normal OCR
-        2. Fallback to preprocessing if needed
-        """
+       
         try:
-            # ---------------------------
-            # Step 1: Normal OCR
-            # ---------------------------
-            image = Image.open(image_path)
-            text = pytesseract.image_to_string(image)
+          
+            image = Image.open(image_path).convert("RGB")
+
+            text = pytesseract.image_to_string(image, lang=self.lang)
 
             if text.strip():
-                print("Normal OCR worked")
-                return text.strip()
+                return {
+                    "text": text.strip(),
+                    "method": "normal"
+                }
 
-            # ---------------------------
-            # Step 2: Fallback OCR
-            # ---------------------------
-            print("Applying preprocessing...")
-
+           
             processed_img = self.preprocess_image(image_path)
-            text = pytesseract.image_to_string(processed_img)
+
+            text = pytesseract.image_to_string(processed_img, lang=self.lang)
 
             if text.strip():
-                print("OCR worked after preprocessing")
-            else:
-                print("Still no text found")
+                return {
+                    "text": text.strip(),
+                    "method": "preprocessed"
+                }
 
-            return text.strip()
+            
+            return {
+                "text": "",
+                "method": "failed"
+            }
 
         except Exception as e:
-            print("OCR Error:", e)
-            return ""
+            return {
+                "text": "",
+                "method": "error",
+                "error": str(e)
+            }
 
 
-# ---------------------------
-# INTERACTIVE MODE 🔥
-# ---------------------------
+
 if __name__ == "__main__":
     ocr = OCRExtractor()
 
     print("\n OCR TEST MODE\n")
-    print("Current working directory:", os.getcwd())
 
-    image_path = input("\nEnter image path (e.g., data/raw/test.png): ")
+    image_path = input("Enter image path: ")
 
     if not os.path.exists(image_path):
-        print(" File not found. Check path!")
+        print("File not found!")
     else:
-        text = ocr.extract_text(image_path)
+        result = ocr.extract_text(image_path)
 
-        print("\n Extracted Text:\n")
-        print(text if text else " No text found in image")
+        print("\nExtracted Text:\n")
+        print(result["text"] if result["text"] else "No text found")
+        print("\nMethod used:", result["method"])

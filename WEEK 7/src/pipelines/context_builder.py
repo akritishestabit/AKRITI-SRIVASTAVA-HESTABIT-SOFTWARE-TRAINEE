@@ -3,19 +3,9 @@ class ContextBuilder:
         self.max_chunks = max_chunks
 
     def build(self, chunks):
-        """
-        chunks: list of retrieved chunks
-        returns: formatted context string
-        """
-
-        # ---------------------------
-        # 1. Limit chunks
-        # ---------------------------
         selected_chunks = chunks[:self.max_chunks]
 
-        # ---------------------------
-        # 2. Remove duplicates
-        # ---------------------------
+      
         seen = set()
         unique_chunks = []
 
@@ -26,9 +16,7 @@ class ContextBuilder:
                 seen.add(text)
                 unique_chunks.append(chunk)
 
-        # ---------------------------
-        # 3. Format context
-        # ---------------------------
+        
         context_parts = []
 
         for i, chunk in enumerate(unique_chunks):
@@ -39,9 +27,7 @@ class ContextBuilder:
             )
             context_parts.append(formatted)
 
-        # ---------------------------
-        # 4. Join everything
-        # ---------------------------
+        
         final_context = "\n---\n".join(context_parts)
 
         return final_context

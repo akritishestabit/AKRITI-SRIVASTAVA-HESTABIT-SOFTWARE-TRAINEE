@@ -9,9 +9,6 @@ class CLIPEmbedder:
         self.model = SentenceTransformer(model_name)
 
     def embed_image(self, image_path):
-        """
-        Convert image → embedding vector
-        """
         image = Image.open(image_path).convert("RGB")
 
         embedding = self.model.encode(image)
@@ -19,9 +16,7 @@ class CLIPEmbedder:
         return np.array(embedding)
 
     def embed_text(self, text):
-        """
-        Convert text → embedding vector
-        """
+       
         embedding = self.model.encode(text)
 
         return np.array(embedding)

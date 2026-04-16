@@ -7,23 +7,29 @@ class Reranker:
         self.model = SentenceTransformer(model_name)
 
     def rerank(self, query, chunks, top_k=5):
-        # Encode query
-        query_embedding = self.model.encode([query])[0]
+        
+        query_embedding = self.model.encode(
+            query,
+            convert_to_numpy=True
+        )
 
-        scored_chunks = []
+       
+        texts = [chunk["text"] for chunk in chunks]
 
-        for chunk in chunks:
-            chunk_embedding = self.model.encode([chunk["text"]])[0]
+        chunk_embeddings = self.model.encode(
+            texts,
+            convert_to_numpy=True
+        )
 
-            # cosine similarity
-            score = np.dot(query_embedding, chunk_embedding) / (
-                np.linalg.norm(query_embedding) * np.linalg.norm(chunk_embedding)
-            )
+       
+        query_norm = query_embedding / np.linalg.norm(query_embedding)
+        chunk_norms = chunk_embeddings / np.linalg.norm(chunk_embeddings, axis=1, keepdims=True)
 
-            scored_chunks.append((score, chunk))
+        
+        scores = np.dot(chunk_norms, query_norm)
 
-        # sort by score (descending)
-        scored_chunks.sort(key=lambda x: x[0], reverse=True)
+        
+        ranked_indices = np.argsort(scores)[::-1]
 
-        # return only chunks
-        return [chunk for score, chunk in scored_chunks[:top_k]]
+        
+        return [chunks[i] for i in ranked_indices[:top_k]]
