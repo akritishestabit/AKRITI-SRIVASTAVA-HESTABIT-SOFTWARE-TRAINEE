@@ -13,6 +13,36 @@ The system combines:
 
 ---
 
+## High-Level Flow Diagram
+
+```mermaid
+flowchart TD
+    A[User Input] --> B[Memory Recall]
+    B --> C[Orchestrator]
+    C --> D[Planner (DAG)]
+    D --> E[Worker Agents]
+
+    E --> E1[Researcher]
+    E --> E2[Coder]
+    E --> E3[Analyst]
+
+    E1 --> F[Tool Layer]
+    E2 --> F
+    E3 --> F
+
+    F --> G[Parallel Execution Engine]
+
+    G --> H[Critic]
+    H --> I[Optimizer]
+    I --> J[Validator]
+    J --> K[Reporter]
+
+    K --> L[Final Output]
+    L --> M[Memory Storage]
+```
+
+---
+
 ## High-Level Flow
 
 User Input
@@ -34,7 +64,7 @@ User Input
 ### 1. Orchestrator Agent
 
 * Converts raw user query into a refined objective
-* Uses both short-term (last output) and long-term memory
+* Uses both short-term and long-term memory
 * Ensures context-aware understanding
 
 ---
@@ -74,7 +104,7 @@ Tools are executed via a controlled proxy:
 * Database Tools → SQL execution
 * Code Executor → Python execution
 
-This ensures separation between reasoning and execution.
+Ensures separation between reasoning and execution.
 
 ---
 
@@ -119,7 +149,7 @@ This ensures separation between reasoning and execution.
 ### Short-Term Memory
 
 * Stores last_output
-* Used to resolve references like "it", "this"
+* Resolves references like "it", "this"
 
 ### Long-Term Memory (Vector Store)
 
@@ -138,7 +168,7 @@ This ensures separation between reasoning and execution.
 * Hybrid architecture (LLM + rule-based routing)
 * Separation of reasoning and execution
 * Context-aware orchestration
-* Fault-tolerant execution (try/except, fallbacks)
+* Fault-tolerant execution
 
 ---
 
