@@ -1,0 +1,71 @@
+**pycache**/
+*.py[cod]
+*$py.class
+
+venv/
+.venv/
+env/
+
+
+
+# Environment Variables
+
+
+
+.env
+.env.*
+
+
+
+# Logs
+
+
+
+logs/
+*.log
+
+day5/logs/
+day5/nexus_ai/logs/
+
+
+
+# Memory / Vector DB
+
+
+
+# FAISS
+
+*.index
+*.npy
+
+# SQLite DBs (generated)
+
+*.db
+*.sqlite3
+
+# Specific memory folders
+
+day4/memory/faiss_meta.npy
+day4/memory/faiss.index
+day4/memory/long_term.db
+
+day5/memory/
+day5/nexus_ai/memory/
+
+
+
+# Generated Code / Outputs
+
+
+
+nexus_code_*.py
+nexus_explanation_*.md
+executed_code_*.py
+executed_explanation_*.md
+
+day5/executed_code_*.py
+day5/executed_explanation_*.md
+
+
+
+
