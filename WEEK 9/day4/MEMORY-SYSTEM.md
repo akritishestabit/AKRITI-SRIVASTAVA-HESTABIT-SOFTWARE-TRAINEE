@@ -23,7 +23,7 @@ It ensures that the agent:
 
 ## System Flow Diagram
 
-```mermaid
+
 flowchart TD
     A[User Query] --> B[Query Embedding]
     B --> C[FAISS Semantic Search]
@@ -34,7 +34,7 @@ flowchart TD
     G --> H[Store in Short-Term Memory]
     G --> I[Store in SQLite (Episodic)]
     G --> J[Store in FAISS (Semantic)]
-```
+
 
 ---
 

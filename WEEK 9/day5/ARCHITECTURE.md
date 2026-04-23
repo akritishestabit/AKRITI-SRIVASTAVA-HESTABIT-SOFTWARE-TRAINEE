@@ -15,33 +15,18 @@ The system combines:
 
 ## High-Level Flow Diagram
 
-```mermaid
 flowchart TD
     A[User Input] --> B[Memory Recall]
     B --> C[Orchestrator]
-    C --> D[Planner (DAG)]
-    D --> E[Worker Agents]
-
-    E --> E1[Researcher]
-    E --> E2[Coder]
-    E --> E3[Analyst]
-
-    E1 --> F[Tool Layer]
-    E2 --> F
-    E3 --> F
-
-    F --> G[Parallel Execution Engine]
-
+    C --> D[Planner]
+    D --> E[Workers]
+    E --> F[Tools]
+    F --> G[Execution]
     G --> H[Critic]
     H --> I[Optimizer]
     I --> J[Validator]
-    J --> K[Reporter]
-
-    K --> L[Final Output]
-    L --> M[Memory Storage]
-```
-
----
+    J --> K[Output]
+    K --> L[Memory]
 
 ## High-Level Flow
 
