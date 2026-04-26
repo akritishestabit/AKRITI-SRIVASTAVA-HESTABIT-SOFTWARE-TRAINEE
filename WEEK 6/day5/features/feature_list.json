@@ -1,0 +1,4 @@
+["fare_log", "pclass_fare", "Fare", "fare_squared", "Sex_male", 
+ "fare_per_person", "Pclass", "is_alone", "age_fare_ratio", 
+ "family_size", "Age", "age_group_teen", "age_squared", 
+ "Parch", "age_group_adult"]
